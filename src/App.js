@@ -1,13 +1,19 @@
 import React from 'react';
+import { BrowserRouter as Router, Switch, Route, Routes, Form, Link } from "react-router-dom";
 import LoginForm from './components/Form';
 import Navbar from './components/NavBar/NavBar';
+import './app.css'
+import NavBarPrin from './components/NavBarPrin/NavBarPrin';
+import LandingPage from './components/LandingPage/LandingPage';
+import { useMediaQuery } from 'react-responsive'
+import LandingPage2 from './components/LandingPage/LandingPage2';
+
 
 function App() {
   return (
-    <>
-      <Navbar />
-      <LoginForm />
-    </>
+    <div>
+      <LandingPage/>
+    </div>
   );
 }
 

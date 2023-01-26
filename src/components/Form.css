@@ -7,9 +7,12 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url(Connexion.png);
+    margin-top: 20px;
+    background-position: center;
+
 }
 
-form{
+.form1{
     background-color: white;
     position: relative;
     width: 490px;
@@ -50,7 +53,7 @@ h5{
     justify-content: space-between;
 }
 
-button {
+.button1 {
     width: 100%;
     max-width: 100%;
     padding: 10px;
@@ -63,6 +66,13 @@ button {
 }
 
 .button2 {
+    width: 100%;
+    max-width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
     background-color: #ffffff;
     border: 1px solid rgb(213, 210, 210);
     color: black;

@@ -1,0 +1,23 @@
+body {
+    background-image: url(LandingPage.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: fixed;
+}
+
+.landingpage {
+    position: fixed;
+}
+
+
+.text1 {
+    position: relative;
+    top: 130px;
+    left: 200px;
+}
+
+.text2 {
+    position: relative;
+    top: 280px;
+    left: 250px;
+}

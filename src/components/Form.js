@@ -4,6 +4,7 @@ import FormInput from './FormInput';
 import "./Form.css";
 import { MdOutlineCheckBoxOutlineBlank } from 'react-icons/md'
 import { FcGoogle } from 'react-icons/fc'
+import Navbar from './NavBar/NavBar';
 
 function LoginForm(){
 
@@ -51,8 +52,12 @@ function LoginForm(){
         console.log(values);
 
     return (
-        <div className="Form">
-        <form onSubmit={handleSubmit}>
+      <div>
+        <div className='Navbar'>
+          <Navbar/>
+        </div>
+        <div className="Form">  
+        <form className='form1' onSubmit={handleSubmit}>
           <h1>Bienvenue!</h1>
           <h5>Connectez-vous pour découvrir toutes nos fonctionnalités.</h5>
           {inputs.map((input) => (
@@ -62,10 +67,11 @@ function LoginForm(){
              <h5><MdOutlineCheckBoxOutlineBlank className='minibox'/> Remember for 30days</h5>
              <h5 className='mdp'>Mot de passe oublié</h5>
           </div>
-          <button>Se connecter</button>
+          <button className='button1'>Se connecter</button>
           <button className='button2'><FcGoogle className='google'/>Se connecter avec Google</button>
           <h4>Vous n'avez pas de compte ? Insrivez-vous</h4>
         </form>
+        </div>
       </div>
     )
 }

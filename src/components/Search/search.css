@@ -1,0 +1,17 @@
+.Search{
+    position: relative;
+    left: 240px;
+    top: 260px;
+}
+
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    overflow: hidden;
+    white-space: nowrap;
+    width: 1px;
+}
+
+.loupe {
+    cursor: pointer;
+}

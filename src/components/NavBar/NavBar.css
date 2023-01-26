@@ -13,7 +13,7 @@
 
 header {
 	display: flex;
-	z-index: 1;
+	/* z-index: 1; */
 	align-items: center;
 	justify-content: space-between;
 	height: 70px;
@@ -23,30 +23,19 @@ header {
 }
 
 a {
-	margin-left: 600px;
+	margin: auto;
 	text-align: center;
 }
 
 
-header div,
-nav {
+header div{
 	display: flex;
 	align-items: center;
+	justify-content: space-between;
+	margin: auto;
 }
 
 
-.nav{
-    background-color: white;
-    color: rgb(69, 159, 69);
-    display:flex;
-    justify-content: space-between;
-    align-items: top;
-    gap: 10rem;
-    padding: 0 40rem;
-    border: 1px solid rgb(213, 210, 210);
-    box-shadow: 5px 5px 10px 2px rgba(1git branch42, 141, 141, 0.8);
-    font-size: large;
-}
 
 h3{
 	margin-left: 50px;
@@ -57,4 +46,8 @@ h3{
 
 .certificate {
 	vertical-align: middle;
+}
+
+.backArrow{
+	cursor: pointer;
 }
