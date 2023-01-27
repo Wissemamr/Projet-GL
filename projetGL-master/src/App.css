@@ -1,0 +1,59 @@
+
+.nav{
+    background-color: white;
+    color: rgb(69, 159, 69);
+    display:flex;
+    justify-content: space-between;
+    align-items: top;
+    gap: 2rem;
+    padding: 0 1rem;
+    border: 1px solid rgb(213, 210, 210);
+    box-shadow: 5px 5px 10px 2px rgba(142, 141, 141, 0.8);
+}
+
+.nav ul{
+    
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav a {
+    color : inherit;
+}
+
+
+.Form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(Connexion.png);
+    background-size: cover;
+}
+
+form{
+    background-color: white;
+    padding: 50px 60px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px 2px rgba(142, 141, 141, 0.8);
+}
+
+h1{
+    text-align: center;
+}
+
+h5{
+    color: rgb(177, 173, 173);
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(49, 205, 132);
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+}
