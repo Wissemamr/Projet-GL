@@ -8,7 +8,7 @@ import backgroundppl from './backgroundppl.svg'
 import siteLogo from './siteLogo.svg'
 import {MdOutlineArrowBackIosNew, MdOutlineArrowForwardIos} from 'react-icons/md'
 import {FaRegHeart} from 'react-icons/fa'
-import {BsArrowUpRight} from 'react-icons/bs'
+import {BsArrowUpRight , BsVectorPen} from 'react-icons/bs'
 import {GiGraduateCap} from 'react-icons/gi'
 import {FaFacebookF , FaInstagram , FaLinkedinIn} from 'react-icons/fa'
 import { useRef } from "react";
@@ -91,21 +91,24 @@ function LandingPage() {
             </div>
             <div className="Themes">
                 <div className="text5">
-                <h1>Plus <span style={{'color':"#20B486"}}>Populaires</span><span style={{'color':"#20B486"}}> des Thémes</span></h1>
+                <h1>Plus <span style={{'color':"#20B486"}}>Populaires</span><span style={{'color':"#20B486"}}> des Thèmes</span></h1>
                 </div>
                 <div className="text6">
-                    <h5>Ameliorer vos  rendements dans  des modules précis</h5>
+                    <h5>Améliorer vos  rendements dans  des modules précis</h5>
                 </div>
                 <div className="ThemesCards" >
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
+                    <button className="themecardBtn"> <BsVectorPen size={20}/> Lorem Ipsum <BsArrowUpRight className="rightarrowTheme" /> </button>
+                    <button className="themecardBtn"> <BsVectorPen size={20}/> Lorem Ipsum <BsArrowUpRight className="rightarrowTheme"/> </button>
+                    <button className="themecardBtn"> <BsVectorPen size={20}/> Lorem Ipsum <BsArrowUpRight className="rightarrowTheme"/> </button>
+                    <button className="themecardBtn"> <BsVectorPen size={20}/> Lorem Ipsum <BsArrowUpRight className="rightarrowTheme"/> </button>
+                    <button className="themecardBtn"> <BsVectorPen size={20}/> Lorem Ipsum <BsArrowUpRight className="rightarrowTheme"/> </button>
+                    <button className="themecardBtn"> <BsVectorPen size={20}/> Lorem Ipsum <BsArrowUpRight className="rightarrowTheme"/> </button>
+                    <button className="themecardBtn"> <BsVectorPen size={20}/> Lorem Ipsum <BsArrowUpRight className="rightarrowTheme"/> </button>
+                    <button className="themecardBtn"> <BsVectorPen size={20}/> Lorem Ipsum <BsArrowUpRight className="rightarrowTheme"/> </button>
+                    <button className="themecardBtn"> <BsVectorPen size={20}/> Lorem Ipsum <BsArrowUpRight className="rightarrowTheme"/> </button>
+                    <button className="themecardBtn"> <BsVectorPen size={20}/> Lorem Ipsum <BsArrowUpRight className="rightarrowTheme"/> </button>
+                    <button className="themecardBtn"> <BsVectorPen size={20}/> Lorem Ipsum <BsArrowUpRight className="rightarrowTheme"/> </button>
+                    <button className="themecardBtn"> <BsVectorPen size={20}/> Lorem Ipsum <BsArrowUpRight className="rightarrowTheme"/> </button>
                 </div>
             </div>
             <div className="Instructeurs">
@@ -191,43 +194,43 @@ function LandingPage() {
                         <div className="exploreFooter">
                             <h3>Explore</h3>
                             <div className="exploreUnderText">
-                                <a>Home</a>
+                                <a href="#" style={{'color':'#6D737A'}}>Home</a>
                                 <br/>
-                                <a>Cours</a>
+                                <a href="#" style={{'color':'#6D737A'}}>Cours</a>
                                 <br/>
-                                <a>Thèmes</a>
+                                <a href="#" style={{'color':'#6D737A'}}>Thèmes</a>
                                 <br/>
-                                <a>Instructeurs</a>
+                                <a href="#" style={{'color':'#6D737A'}}>Instructeurs</a>
                                 <br/>
-                                <a>Niveaux</a>
+                                <a href="#" style={{'color':'#6D737A'}}>Niveaux</a>
                                 <br/>
-                                <a>Contact</a>
+                                <a href="#" style={{'color':'#6D737A'}}>Contact</a>
                             </div>
                         </div>
                         <div className="themesFooter">
                             <h3>Thèmes</h3>
                             <div className="themesUnderText">
-                                <a>Math</a>
+                                <a href="#" style={{'color':'#6D737A'}}>Math</a>
                                 <br/>
-                                <a>Physique</a>
+                                <a href="#" style={{'color':'#6D737A'}}>Physique</a>
                                 <br/>
-                                <a>Français</a>
+                                <a href="#" style={{'color':'#6D737A'}}>Français</a>
                                 <br/>
-                                <a>Anglais</a>
+                                <a href="#" style={{'color':'#6D737A'}}>Anglais</a>
                                 <br/>
-                                <a>Espagnol</a>
+                                <a href="#" style={{'color':'#6D737A'}}>Espagnol</a>
                             </div>
                         </div>
                         <div className="categoriesFooter">
                             <h3>Catégories</h3>
                             <div className="categoriesUnderText">
-                                <a>Primaire</a>
+                                <a href="#" style={{'color':'#6D737A'}}>Primaire</a>
                                 <br/>
-                                <a>Collège</a>
+                                <a href="#" style={{'color':'#6D737A'}}>Collège</a>
                                 <br/>
-                                <a>Lycée</a>
+                                <a href="#" style={{'color':'#6D737A'}}>Lycée</a>
                                 <br/>
-                                <a>Université</a>
+                                <a href="#" style={{'color':'#6D737A'}}>Université</a>
                             </div>
                         </div>
                 </div>

@@ -202,11 +202,29 @@
 }
 
 .ThemesCards {
-    background-color: #20B486;
-    margin: 30px 200px 200px 250px;
+    margin: 30px 150px 100px 250px;
     display: flex;
+    flex-wrap: wrap;
     padding: 10px;
     grid-gap: 10px;
+}
+
+.themecardBtn {
+    width: 250px;
+    height: 60px;
+    background: #FFFFFF;
+    /*border: 1px solid #20B486;*/
+    box-shadow: 0px 3px 12px rgba(75, 75, 75, 0.08);
+    border-radius: 8px;
+    font-size: 18px;
+}
+
+.themecardBtn:hover {
+    border: 1px solid #20B486;
+}
+
+.rightarrowtheme {
+    padding-left: 5px;
 }
 
 .Instructeurs {
@@ -337,6 +355,17 @@
 
 .paragraph1 {
     margin-top: 150px;
+}
+
+.btnInsc {
+    width: 30%;
+    padding: 10px;
+    background-color: #20B486;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
 }
 
 .footer {
