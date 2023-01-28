@@ -6,7 +6,6 @@ import './app.css'
 import NavBarPrin from './components/NavBarPrin/NavBarPrin';
 import LandingPage from './components/LandingPage/LandingPage';
 import { useMediaQuery } from 'react-responsive'
-import LandingPage2 from './components/LandingPage/LandingPage2';
 
 
 function App() {

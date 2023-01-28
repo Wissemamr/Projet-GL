@@ -16,7 +16,7 @@ const NavBarPrin= () =>{
         <div className='elements1'>
           <ul>
           <Link to="/" className='Logo'><img src={logo} alt="logo" /></Link>
-          <button className='btn1'><li className='DepotAnnonce'><GoDiffAdded className='annonce'/>Déposer une annoce</li></button>
+          <Link to="/DeposerUneAnnoce" className='btn1'><li className='DepotAnnonce'><GoDiffAdded className='annonce'/>Déposer une annoce</li></Link>
           <Link className='smallIcon'><li><HiSearch/>Rechercher</li></Link>
           </ul>
         </div>
