@@ -3,17 +3,16 @@ import "./search.css"
 import {AiOutlineSearch} from "react-icons/ai"
 
 const SearchBar = () => (
-    <form className="Search" action="/" method="get">
-        <label htmlFor="header-search">
-            <span className="visually-hidden">Que voulez-vous apprendre ?</span>
-        </label>
+    <form className="SearchForm" action="/" method="get">
+        <div className="Search">
         <input
-            type="text"
+            type="search"
             id="header-search"
             placeholder="Que voulez-vous apprendre ?"
             name="s" 
         />
         <AiOutlineSearch className="loupe"/>
+        </div>
     </form>
 );
 

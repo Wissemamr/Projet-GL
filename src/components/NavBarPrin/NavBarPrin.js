@@ -17,14 +17,14 @@ const NavBarPrin= () =>{
           <ul>
           <Link to="/" className='Logo'><img src={logo} alt="logo" /></Link>
           <button className='btn1'><li className='DepotAnnonce'><GoDiffAdded className='annonce'/>Déposer une annoce</li></button>
-          <Link className='rechercher'><li><HiSearch className='recherche'/>Rechercher</li></Link>
+          <Link className='smallIcon'><li><HiSearch/>Rechercher</li></Link>
           </ul>
         </div>
         <ul>
-            <Link className='annonces'><li><CiShoppingTag className='mesAnnonces'/>Mes Annonces</li></Link>
-            <Link className='offres'><li><BsChatRightText className='mesOffres'/>Offres</li></Link>
-            <Link className='favoris'><li><FaRegHeart className='mesFavoris'/>Favoris</li></Link>
-            <Link to='/Login' className='connexion'><li><CgProfile className='CgProfile'/>Se connecter</li></Link>
+            <Link className='smallIcon'><li><CiShoppingTag /><p>Mes Annonces</p></li></Link>
+            <Link className='smallIcon'><li><BsChatRightText/><p>Offres</p></li></Link>
+            <Link className='smallIcon'><li><FaRegHeart/><p>Favoris</p></li></Link>
+            <Link to='/Login' className='smallIcon'><li><CgProfile/><p>Se connecter</p></li></Link>
          </ul> 
       </nav>
     );

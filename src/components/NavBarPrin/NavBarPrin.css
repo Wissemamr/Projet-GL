@@ -1,10 +1,8 @@
 * {
-    box-sizing: border-box;
+    text-decoration: none;
 }
 
-body {
-    margin : 0;
-}
+
 
 .NavBarPrin {
     background-color: #ffffff;
@@ -21,25 +19,18 @@ body {
     margin: auto;
 }
  
-ul {
-    text-decoration: none;
-}
 
 .NavBarPrin ul {
     padding: 0;
-    margin: 0;
+    margin: auto;
     list-style: none;
     display: flex;
+    align-items: center;
     gap: 1rem;
 }
 
-.CgProfile {
-    display: block;
-}
 
-.recherche {
-    vertical-align: middle;
-}
+
 
 .btn1{
     background-color: #20B486;
@@ -63,46 +54,17 @@ ul {
   font-size: 16px;
 }
 
-.annonce {
+.annonce{
     vertical-align: middle;
-   
 }
 
-.mesAnnonce {
-    display: block;
-}
 
-.mesOffres {
-    display: block;
-}
 
-.mesFavoris {
-    display: block;
-}
 
-.rechercher {
-    text-decoration: none;
+.smallIcon *{
     color: black;
-
-}
-
-.annonces {
-    text-decoration: none;
-    color: black;
-}
-
-.offres {
-    text-decoration: none;
-    color: black;
-
-}
-
-.favoris {
-    text-decoration: none;
-    color: black;
-}
-
-.connexion {
-    text-decoration: none;
-    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }

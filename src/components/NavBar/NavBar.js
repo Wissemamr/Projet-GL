@@ -7,7 +7,7 @@ import {Link} from "react-router-dom"
 function Navbar() {
 	
 	return (
-		<header>
+		<header className="navHeader">
 			<HiOutlineArrowLeft className="backArrow" onClick={() => console.log("maria") /*fonction à exécuter*/} />
 			<div className="side-by-side">
 				<Link to="/"><img src={logo} alt="logo" /></Link>

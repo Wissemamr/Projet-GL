@@ -58,18 +58,18 @@ function LoginForm(){
         </div>
         <div className="Form">  
         <form className='form1' onSubmit={handleSubmit}>
-          <h1>Bienvenue!</h1>
-          <h5>Connectez-vous pour découvrir toutes nos fonctionnalités.</h5>
+          <h1 className='welcome'>Bienvenue!</h1>
+          <h5 className='login'>Connectez-vous pour découvrir toutes nos fonctionnalités.</h5>
           {inputs.map((input) => (
             <FormInput key={input.id} {...input} value={values[input.name]} onChange={onChange} />
           ))}
           <div className='sidebyside'>
-             <h5><MdOutlineCheckBoxOutlineBlank className='minibox'/> Remember for 30days</h5>
+             <h5 className='remember'><MdOutlineCheckBoxOutlineBlank className='minibox'/> Remember for 30days</h5>
              <h5 className='mdp'>Mot de passe oublié</h5>
           </div>
           <button className='button1'>Se connecter</button>
           <button className='button2'><FcGoogle className='google'/>Se connecter avec Google</button>
-          <h4>Vous n'avez pas de compte ? Insrivez-vous</h4>
+          <h4 className='inscription'>Vous n'avez pas de compte ? Inscrivez-vous</h4>
         </form>
         </div>
       </div>

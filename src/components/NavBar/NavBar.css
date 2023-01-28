@@ -11,7 +11,7 @@
 	--textColor: #eee;
 }
 
-header {
+.navHeader {
 	display: flex;
 	/* z-index: 1; */
 	align-items: center;
@@ -22,13 +22,10 @@ header {
 	border: 1px solid rgb(213, 210, 210);
 }
 
-a {
-	margin: auto;
-	text-align: center;
-}
 
 
-header div{
+
+.navHeader div{
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -37,7 +34,7 @@ header div{
 
 
 
-h3{
+.Connexion{
 	margin-left: 50px;
 	color: #20B486;
 	

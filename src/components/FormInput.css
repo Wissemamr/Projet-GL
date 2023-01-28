@@ -17,7 +17,7 @@ label{
     color: grey;
 }
 
-span{
+.erreur{
     font-size: 10px;
     padding: 3px;
     margin-left: 5%;
