@@ -17,6 +17,9 @@ module.exports = {
         'iconGray':'#6D737A' 
       },
     },
+    fontFamily:{
+      publicSans : ["Public Sans", "sans-serif"],
+    }
   },
   plugins: [],
 }

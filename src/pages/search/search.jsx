@@ -19,6 +19,7 @@ const Search = (props) => {
                         <Card/>
                         <Card/>
                         <Card/>
+                        <Card/>
                     </div>
                 </div>
            
