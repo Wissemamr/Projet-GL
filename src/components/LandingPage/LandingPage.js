@@ -5,10 +5,12 @@ import "./LandingPage.css"
 import backgroundWoman from './backgroundWoman.svg'
 import backgroundWoman2 from './backgroundWoman2.svg'
 import backgroundppl from './backgroundppl.svg'
+import siteLogo from './siteLogo.svg'
 import {MdOutlineArrowBackIosNew, MdOutlineArrowForwardIos} from 'react-icons/md'
 import {FaRegHeart} from 'react-icons/fa'
 import {BsArrowUpRight} from 'react-icons/bs'
 import {GiGraduateCap} from 'react-icons/gi'
+import {FaFacebookF , FaInstagram , FaLinkedinIn} from 'react-icons/fa'
 import { useRef } from "react";
 
 function LandingPage() {
@@ -168,6 +170,66 @@ function LandingPage() {
                      Rejoingnez <span style={{'color':"#20B486"}}> la première </span><br/>platforme de soutien <br/>scolaire en <span style={{'color':"#20B486"}}> Algérie </span>
                     </h2>
                     <button className="btnInsc">S'inscrire gratuitement</button>
+                </div>
+            </div>
+            <div className="footer">
+                <div className="footerSec1">
+                    <div className="siteLogo"> 
+                     <img src={siteLogo} alt='siteLogo'></img>
+                    </div> 
+                    <div className="textUnderLogo">
+                        <h4>Contactez nous</h4>
+                        <h5 className="minitextUnderLogo">+213 555 555 555 <br/> Lorem place, Lorem Adress. <br/> example@mail.com</h5>
+                        <div className="contactIcons">
+                          <FaFacebookF className="miniIcon" size={30}/>
+                          <FaInstagram className="miniIcon" size={30}/>
+                          <FaLinkedinIn className="miniIcon" size={30}/>
+                        </div>
+                    </div>
+                </div>
+                <div className="footerSec2">
+                        <div className="exploreFooter">
+                            <h3>Explore</h3>
+                            <div className="exploreUnderText">
+                                <a>Home</a>
+                                <br/>
+                                <a>Cours</a>
+                                <br/>
+                                <a>Thèmes</a>
+                                <br/>
+                                <a>Instructeurs</a>
+                                <br/>
+                                <a>Niveaux</a>
+                                <br/>
+                                <a>Contact</a>
+                            </div>
+                        </div>
+                        <div className="themesFooter">
+                            <h3>Thèmes</h3>
+                            <div className="themesUnderText">
+                                <a>Math</a>
+                                <br/>
+                                <a>Physique</a>
+                                <br/>
+                                <a>Français</a>
+                                <br/>
+                                <a>Anglais</a>
+                                <br/>
+                                <a>Espagnol</a>
+                            </div>
+                        </div>
+                        <div className="categoriesFooter">
+                            <h3>Catégories</h3>
+                            <div className="categoriesUnderText">
+                                <a>Primaire</a>
+                                <br/>
+                                <a>Collège</a>
+                                <br/>
+                                <a>Lycée</a>
+                                <br/>
+                                <a>Université</a>
+                            </div>
+                        </div>
                 </div>
             </div>
         </div>
