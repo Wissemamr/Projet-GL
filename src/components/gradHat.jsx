@@ -3,7 +3,7 @@ import gradIconBlue from '../assets/vectors/GraduationCapBlue.svg'
 import gradIconGreen from '../assets/vectors/GraduationCapGreen.svg'
 import gradIconRed from '../assets/vectors/GraduationCapRed.svg'
 
-const nvIcon = (props) => {
+const NiveauIcon = (props) => {
     const lv = props.level
     if (lv === 'collége') {
         return <div className=" w-fit bg-myLightRed p-[10px] rounded-lg ">
@@ -27,4 +27,4 @@ const nvIcon = (props) => {
        </div> );
 }
  
-export default nvIcon;
+export default NiveauIcon;

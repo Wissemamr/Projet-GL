@@ -1,13 +1,16 @@
 import './App.css';
 import Search from './pages/search/search';
+// import AjouterFav from './components/ajouterFav';
 // import Card from './components/course_card';
 // import NiveauIcon from './components/gradHat';
+// import Visit from './components/visitArrow';
 
 function App() {
   return (
     //<Card name="hi" ></Card>
-    <Search></Search>
-    
+    <Search/>
+    // <AjouterFav/>
+    //<Visit/>
     );
 }
 
