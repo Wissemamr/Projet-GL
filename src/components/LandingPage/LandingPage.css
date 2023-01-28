@@ -26,7 +26,6 @@
     margin: 9% 1% 0% 25%;
     display: flex;
     flex-direction: column;
-    /* justify-content: flex-start; */
     justify-content: space-between;
 }
 
@@ -87,10 +86,18 @@
     width: 90%;
     height: 80%;
     white-space: nowrap;
-
 }
 
 .slider{
+    width: 100%;
+    height: fit-content;
+    margin-top: 6%;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+}
+
+.slider22{
     width: 100%;
     height: fit-content;
     margin-top: 6%;
@@ -181,6 +188,7 @@
 }
 
 .text5 {
+    color : #06241B;
     margin: 50px 0px 0px 250px;
 }
 
@@ -191,4 +199,142 @@
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
+}
+
+.ThemesCards {
+    background-color: #20B486;
+    margin: 30px 200px 200px 250px;
+    display: flex;
+    padding: 10px;
+    grid-gap: 10px;
+}
+
+.Instructeurs {
+    margin: 20px 0px 20px 0px;
+    width: 100%;
+    height: fit-content;
+    background-color: #FFFAF5;
+    
+}
+
+.slider2 {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 75px;
+}
+
+.text7 {
+    color : #06241B;
+    display: inline-block;
+    margin-top: 70px;
+    margin-left: 250px;
+}
+
+.text8 {
+    margin: 5px 0px 0px 250px;
+    color : #6D737A;
+    font-family: 'Public Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.slider-card-image1 {
+    width : 250px ;
+    height: 260px ;
+    margin: 0px 0px 0px 15px;
+    background-color: #6D737A;
+    border-radius: 8px;
+}
+
+.backgroundWoman2{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 150px;
+    margin-top: 100px;
+}
+.backgroundWoman2 img{
+    width: 50%;
+}
+
+.landingpage2 {
+    display: grid;
+    grid-template-columns: 50% 45%;
+    grid-gap: 5%;
+    margin: 1% 1% 0% 1%;
+} 
+
+.text11 {
+    margin-top: 70px;
+    margin-left: 250px;
+}
+
+.text9 {
+    color : #06241B;
+}
+
+.Niveaux {
+    margin: 9% 1% 0% 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.college {
+    margin: 20px 0px 20px 0px;
+}
+
+.nv1 {
+    color: #20B486;
+    background-color: #c4eade;
+    border-radius: 2px;
+    padding: 2px;
+}
+
+.nv2 {
+    color: #c92b68;
+    background-color: #eac4d3;
+    border-radius: 2px;
+    padding: 2px;
+}
+
+.nv3 {
+    color: #342bcf;
+    background-color: #c4d8ea;
+    border-radius: 2px;
+    padding: 2px;
+}
+
+.landingpage3 {
+    background-color: #E9F8F3;
+    display: grid;
+    grid-template-columns: 45% 50%;
+    grid-gap: 5%;
+    margin: 5% 0% 0% 0%;
+} 
+
+.backgroundppl{
+    display: flex;
+    justify-content: flex-start;
+}
+.backgroundppl img{
+    width: 70%;
+    margin-top: 50px;
+    margin-left: 200px;
+    margin-bottom: 100px;
+}
+
+.paragraph{
+    margin: 9% 1% 0% 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.textParagraph1 {
+    color: #06241B;
+}
+
+.paragraph1 {
+    margin-top: 150px;
 }
