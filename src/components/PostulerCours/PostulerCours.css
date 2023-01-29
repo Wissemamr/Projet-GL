@@ -173,10 +173,9 @@
 
 .PostulerCoursPersonnalInfos {
     margin: 15px 0px 0px 40px;
-    color: #363A3D;
+    color: #4f5355;
     font-family: 'Public Sans';
     font-style: normal;
-    font-weight: 100;
-    font-size: 18px;
-    line-height: 28px;   
+    font-weight: 200;
+    font-size: 18px; 
 }
