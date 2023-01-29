@@ -6,27 +6,31 @@ from django.template.defaultfilters import slugify
 
 
 ## Modèle Catégorie
-class Categorie(models.Model):
-    nomCat=models.CharField(max_length=255,null=True)
-    slug = models.SlugField(unique=True, null=True)
+"""class Categorie(models.Model):
+    Choices = (
+        ('Primaire', 'Primaire'),
+        ('Collège', 'Collège'),
+        ('Lycée', 'Lycée'),
+    )
+    nomCat=models.CharField(max_length=255,null=True,choices=Choices)
+  #  slug = models.SlugField(unique=True, null=True)
 
     def get_all_categories():
         return Categorie.objects.all()
 
     def __str__(self):
         return self.nomCat
-
     def get_url(self):
         return f'/{self.slug}/'
 
     def save(self,*args,**kwargs):
         self.slug=slugify(self.nomCat)
-        super().save(*args,**kwargs)
+        super().save(*args,**kwargs)"""
 
 ###Modèle Thème
-class Thème(models.Model):
+""""class Thème(models.Model):
 
-    catégorie=models.ForeignKey(Categorie,on_delete=models.CASCADE,related_name='thème',null=True)
+    categorie=models.ForeignKey(Categorie,on_delete=models.CASCADE,related_name='thème',null=True)
     nomTheme=models.CharField(max_length=255,null=True)
     slug = models.SlugField(unique=True, null=True)
     def __str__(self):
@@ -34,18 +38,18 @@ class Thème(models.Model):
 
     def save(self,*args,**kwargs):
         self.slug=slugify(self.nomTheme)
-        super().save(*args,**kwargs)
+        super().save(*args,**kwargs)"""
 
 class Wilaya(models.Model):
 
    
     nomWilaya=models.CharField(max_length=255,null=True)
     slug = models.SlugField(unique=True, null=True)
-    def __str__(self):
-        return self.nomTheme
+    """def __str__(self):
+        return self.nomWilaya"""
 
     def save(self,*args,**kwargs):
-        self.slug=slugify(self.nomTheme)
+        self.slug=slugify(self.nomWilaya)
         super().save(*args,**kwargs)
 
 
@@ -53,19 +57,32 @@ class Commune(models.Model):
 
     Wilaya=models.ForeignKey(Wilaya,on_delete=models.CASCADE,related_name='thème',null=True)
     nomCommune=models.CharField(max_length=255,null=True)
-    slug = models.SlugField(unique=True, null=True)
-    def __str__(self):
-        return self.nomTheme
+    """def __str__(self):
+        return self.nomTheme"""
 
     def save(self,*args,**kwargs):
         self.slug=slugify(self.nomTheme)
         super().save(*args,**kwargs)        
 
+
 ###Modèle Annonce
 class Annonce(models.Model):
-    thème=models.ForeignKey(Thème,related_name='annonces',on_delete=models.CASCADE,null=True)
-    categorie=models.ForeignKey(Categorie,related_name='annonces',on_delete=models.CASCADE, null=True)
-    modalité=models.CharField(max_length=100, null=True)  # en ligne ou pas
+    Choices = (
+        ('En-Ligne', 'En-Ligne'),
+        ('Hors-Ligne', 'Hors-Ligne'),
+        
+    )
+    cat = (
+        ('Primaire', 'Primaire'),
+        ('Collège', 'Collège'),
+        ('Lycée', 'Lycée'),
+    )
+    nomCat=models.CharField(max_length=255,null=True,choices=cat)
+    #thème=models.ForeignKey(Thème,related_name='annonces',on_delete=models.CASCADE,null=True)
+    #categorie=models.ForeignKey(Categorie,related_name='annonces',on_delete=models.CASCADE, null=True)
+    modalité=models.CharField(max_length=100, choices=Choices , null=True)  # en ligne ou pas
+    titre=models.CharField(max_length=255,null=True)
+    thème=models.CharField(max_length=255,null=True)
     description=models.TextField(blank=True,null=True)
     slug=models.SlugField(null=True)
     déposé_par=models.ForeignKey(User,on_delete=models.CASCADE,null=True)
@@ -74,7 +91,7 @@ class Annonce(models.Model):
                                 max_digits=15,
                                 decimal_places=2,
                                 default=0.00)
-    favorites=models.ManyToManyField(User,related_name='favorite',default=None,blank=True)
+    favoris=models.ManyToManyField(User,related_name='favorite',default=None,blank=True)
     date=models.DateTimeField( default=datetime.datetime.today)
     adresse=models.TextField(blank=True,null=True)
     Wilaya=models.ForeignKey(Wilaya,related_name='annonces',on_delete=models.CASCADE, null=True)
@@ -88,43 +105,39 @@ class Annonce(models.Model):
         return '' 
     def get_url(self):
         return f'/{self.categorie.slug}/{self.slug}/'
+   
     
-    def __str__(self):
-        return self.slug
+    """def __str__(self):
+        return self.slug"""
         
-    def get_all_annonce_by_categoryid(categorie_id):
+    """def get_all_annonce_by_categoryid(categorie_id):
         if categorie_id:
             return Annonce.objects.filter(categorie=categorie_id)
         else:
-            return Annonce.get_all_products()
-
-class message(models.Model):
-    annonce=models.ForeignKey(Annonce,null=True,on_delete=models.CASCADE,related_name='message')
-    nom_message=models.CharField(max_length=100,blank=True,null=True)
-    auteur=models.ForeignKey(User,on_delete=models.CASCADE,null=True)
-    corps=models.TextField(max_length=500,null=True)
-    date=models.DateTimeField(default=datetime.datetime.today)
+            return Annonce.get_all_products()"""
 
 
-    def save(self,*args,**kwargs):
-         self.nom_message=slugify("Message de " +  str(self.auteur) + "à" + str(self.date))
-         super.save(*args,**kwargs)
+class Offre(models.Model):
+    Annonce=models.ForeignKey(Annonce,on_delete=models.CASCADE,null=True)
+    inscrit=models.ForeignKey(User,on_delete=models.CASCADE,null=True)
+    déposé=models.ForeignKey(User,related_name="déposé_par",on_delete=models.CASCADE,null=True)
 
+    def get_inscrit(self):
+        return self.inscrit   
 
-    def  __str__(self):
-        return self.nom_message   
-
-    class Meta:
-        ordering=['-date']
+    def __str__(self):
+        return f"{self.Annonce.titre} ({self.inscrit.first_name} {self.inscrit.last_name})"
 
 
 
-class reponse_message(models.Model):
-            nom_message=models.ForeignKey(message,on_delete=models.CASCADE,related_name='réponse',null=True)
-            corps=models.TextField(max_length=500,null=True)
-            auteur=models.ForeignKey(User,on_delete=models.CASCADE,null=True)
-            date=models.DateTimeField(default=datetime.datetime.today)
 
+class Offre_perso(models.Model):
+    offre=models.ManyToManyField(Offre)
+    déposé=models.OneToOneField(User,on_delete=models.CASCADE)
 
-            def __str__(self):
-                return "réponse à " + str(self.nom_message)
+    def get_inscrit(self):
+        return self.inscrit   
+
+    def __str__(self):
+        return self.déposé.username
+

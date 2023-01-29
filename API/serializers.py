@@ -1,59 +1,72 @@
 from rest_framework import serializers
-from API.models import Annonce, Categorie , Thème ,Wilaya ,Commune
+from API.models import Annonce ,Wilaya ,Commune , Offre ,Offre_perso
 import datetime
 from drf_writable_nested import WritableNestedModelSerializer
 from Utilisateur.serializer import UserSerializer
-class CategorieSerializer(serializers.ModelSerializer):
+"""class CategorieSerializer(serializers.ModelSerializer):
     class Meta:
         model=Categorie
-        fields='__all__'
+        fields= "__all__"
 
 
-class ThemeSerializer(serializers.ModelSerializer):
-    #categorie=CategorieSerializer()
+class ThemeSerializer(WritableNestedModelSerializer,serializers.ModelSerializer):
+    
     class Meta:
         model=Thème
-        fields='__all__'
+        fields= "__all__"
+"""
 
-
-class WilayaSerializer(serializers.ModelSerializer):
+class WilayaSerializer(WritableNestedModelSerializer,serializers.ModelSerializer):
     
     class Meta:
         model=Wilaya
-        fields='__all__'
+        fields= "__all__"
 
 
-class CommuneSerializer(serializers.ModelSerializer):
+class CommuneSerializer(WritableNestedModelSerializer,serializers.ModelSerializer):
     Wilaya=WilayaSerializer()
     class Meta:
         model=Commune
-        fields='__all__'        
+        fields= "__all__"    
 
 class AnnoncesSerializer(WritableNestedModelSerializer,serializers.ModelSerializer):
-    categorie=CategorieSerializer()
-    thème=ThemeSerializer()
+    """categorie=CategorieSerializer()
+    thème=ThemeSerializer()"""
     class Meta:
         model=Annonce
-        fields = '__all__' 
+        fields = ('id','titre','nomCat','thème','modalité','déposé_par','description','tarif','favoris','Wilaya','commune','adresse' ,'image')
 
     def create_annonce(self,data):
         return Annonce.objects.create(data)
 
-class MessagesSerializer(WritableNestedModelSerializer,serializers.ModelSerializer):
-    annonce=AnnoncesSerializer()
-    utilisateur=UserSerializer()
+
+class MesAnnoncesSerializer(WritableNestedModelSerializer,serializers.ModelSerializer):
+    """categorie=CategorieSerializer()
+    thème=ThemeSerializer()"""
     class Meta:
         model=Annonce
-        fields = '__all__' 
+        fields = ('id','titre','nomCat','thème','modalité','description','tarif','Wilaya','commune','adresse' ,'image')
+
+    def create_annonce(self,data):
+        return Annonce.objects.create(data)
 
 
-class MessagesSerializer(WritableNestedModelSerializer,serializers.ModelSerializer):
-    annonce=AnnoncesSerializer()
-    utilisateur=UserSerializer()
+class MesOffresSerializer(WritableNestedModelSerializer,serializers.ModelSerializer):
+    Annonce=Annonce
+    user=UserSerializer
     class Meta:
-        model=Annonce
-        fields = '__all__' 
+        model=Offre
+        fields = ('Annonce','inscrit')
+
+    def create_annonce(self,data):
+        return Annonce.objects.create(data)
+
+class OffresSerializer(WritableNestedModelSerializer,serializers.ModelSerializer):
+    Offre=Offre
+    déposé=UserSerializer
+    class Meta:
+        model=Offre_perso
+        fields ='__all__'
 
     
 
- 

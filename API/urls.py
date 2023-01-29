@@ -9,11 +9,13 @@ router.register('Annoncefilter',views.Annonce_list)"""
 urlpatterns=[
     
     path('liste/',views.AnnonceList.as_view()),
-    #path('liste/',views.liste),
-    path('Supprimer/<slug:categorie>/<slug:thème>/<slug:Annonce_slug>/',views.SuppressionAnnonce.as_view()),
-    path('Modifier/<slug:categorie>/<slug:thème>/<slug:Annonce_slug>/',views.ModifierAnnonce.as_view()),
-    path('crée/',views.CréeAnnonce.as_view()),
-    path('<slug:categorie>/<slug:thème>/<slug:Annonce_slug>/',views.AnnonceDetail.as_view()),
+    path('Supprimer/<slug:id>/',views.SuppressionAnnonce.as_view()),
+    path('Modifier/<slug:id>/',views.Modifier),
+    path('Déposer/',views.Déposer),
+    path('Details/<slug:id>/',views.AnnonceDetail.as_view(),name="Annonce"),
     path('Favoris/<slug:id>/',views.ajouter_favoris),
-    path('Favorislist/',views.liste_favoris)
+    path('Liste_Favoris/',views.liste_favoris),
+    path('Mes_Annonces/',views.liste_mes_annonces),
+    path('Inscription/<slug:id>/',views.Inscription_Annonce),
+    path('Mes_Offres/', views.Mes_Offres)
 ]
