@@ -1,10 +1,10 @@
 import './App.css';
-import Search from './pages/search/search';
-
-
+ import Search from './pages/search/search';
 function App() {
   return (
-    <Search/>
+      <Search>
+
+      </Search>
     );
 }
 

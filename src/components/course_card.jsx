@@ -1,5 +1,5 @@
 import React from "react"
-import pict1 from '../assets/images/pict1.jpg'
+//import pict1 from '../assets/images/pict1.jpg'
 import pict2 from '../assets/images/pict2.jpg'
 import NiveauIcon from "./gradHat";
 import locIcon from "../assets/vectors/location.svg"
@@ -9,7 +9,7 @@ import Visit from "./visitArrow";
 
 const Card = (props) => {
     return ( 
-    <div className="bg-white flex flex-col justify-center gap-[16px] items-center p-4 rounded-2xl w-[312px]">
+    <div className="bg-white flex flex-col justify-center gap-[16px] items-center p-4 rounded-2xl w-[312px] shadow-md">
         {/* Image Display */}
         <div className="relative container ">
             <img src={pict2} alt='coursePic' className="h-[210px] w-full object-cover rounded-xl" />
@@ -52,7 +52,7 @@ const Card = (props) => {
                 <Visit/>
             </div>
         </div>
-        
+
     </div>);
 }
 

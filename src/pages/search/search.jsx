@@ -12,7 +12,7 @@ const Search = (props) => {
                         <span class="absolute inset-y-0 right-[18px] flex items-center pl-2">
                             <FiSearch className="text-[24px] text-iconGray"></FiSearch>
                         </span>
-                        <input class=" w-full h-[50px] py-2 pl-[15px] rounded-[8px] shadow-md focus:outline-none placeholder:text-iconGray placeholder:font-publicSans placeholder:font-Regular placeholder:text-lg font-publicSans font-Regular text-lg" placeholder="Que voulez-vous apprendre ?" type="text" name="search"/>
+                        <input class=" w-full h-[50px] py-2 pl-[20px] rounded-[8px] shadow-md focus:outline-none placeholder:text-iconGray placeholder:font-publicSans placeholder:font-Regular placeholder:text-lg font-publicSans font-Regular text-lg" placeholder="Que voulez-vous apprendre ?" type="text" name="search"/>
                     </label>
                     <div className="grid grid-cols-3 gap-[24px] mt-[24px] w-full ">
                         <Card/>
