@@ -12,6 +12,7 @@ import {
 } from "react-router-dom";
 import Navbar from "./components/NavBar/NavBar";
 import DeposerUneAnnoce from "./components/DeposerUneAnnocer/DeposerUneAnnonce";
+import MesOffres from "./components/MesOffres/Offres";
 
 
 
@@ -21,7 +22,8 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       <Route path="/" element={<App/>}/>
       <Route path='/login' element={<LoginForm/>}/>
       <Route path='/navbar' element={<Navbar/>}/>    
-      <Route path='DeposerUneAnnoce' element={<DeposerUneAnnoce/>}/> 
+      <Route path='/DeposerUneAnnoce' element={<DeposerUneAnnoce/>}/> 
+      <Route path='/MesOffres' element={<MesOffres/>}/> 
     </Routes>
   </BrowserRouter>
 );

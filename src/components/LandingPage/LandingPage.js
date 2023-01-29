@@ -1,5 +1,6 @@
 import React from "react";
 import NavBarPrin from "../NavBarPrin/NavBarPrin";
+import Footer from "../Footer/Footer";
 import SearchBar from "../Search/search";
 import "./LandingPage.css"
 import backgroundWoman from './backgroundWoman.svg'
@@ -175,66 +176,7 @@ function LandingPage() {
                     <button className="btnInsc">S'inscrire gratuitement</button>
                 </div>
             </div>
-            <div className="footer">
-                <div className="footerSec1">
-                    <div className="siteLogo"> 
-                     <img src={siteLogo} alt='siteLogo'></img>
-                    </div> 
-                    <div className="textUnderLogo">
-                        <h4>Contactez nous</h4>
-                        <h5 className="minitextUnderLogo">+213 555 555 555 <br/> Lorem place, Lorem Adress. <br/> example@mail.com</h5>
-                        <div className="contactIcons">
-                          <FaFacebookF className="miniIcon" size={30}/>
-                          <FaInstagram className="miniIcon" size={30}/>
-                          <FaLinkedinIn className="miniIcon" size={30}/>
-                        </div>
-                    </div>
-                </div>
-                <div className="footerSec2">
-                        <div className="exploreFooter">
-                            <h3>Explore</h3>
-                            <div className="exploreUnderText">
-                                <a href="#" style={{'color':'#6D737A'}}>Home</a>
-                                <br/>
-                                <a href="#" style={{'color':'#6D737A'}}>Cours</a>
-                                <br/>
-                                <a href="#" style={{'color':'#6D737A'}}>Thèmes</a>
-                                <br/>
-                                <a href="#" style={{'color':'#6D737A'}}>Instructeurs</a>
-                                <br/>
-                                <a href="#" style={{'color':'#6D737A'}}>Niveaux</a>
-                                <br/>
-                                <a href="#" style={{'color':'#6D737A'}}>Contact</a>
-                            </div>
-                        </div>
-                        <div className="themesFooter">
-                            <h3>Thèmes</h3>
-                            <div className="themesUnderText">
-                                <a href="#" style={{'color':'#6D737A'}}>Math</a>
-                                <br/>
-                                <a href="#" style={{'color':'#6D737A'}}>Physique</a>
-                                <br/>
-                                <a href="#" style={{'color':'#6D737A'}}>Français</a>
-                                <br/>
-                                <a href="#" style={{'color':'#6D737A'}}>Anglais</a>
-                                <br/>
-                                <a href="#" style={{'color':'#6D737A'}}>Espagnol</a>
-                            </div>
-                        </div>
-                        <div className="categoriesFooter">
-                            <h3>Catégories</h3>
-                            <div className="categoriesUnderText">
-                                <a href="#" style={{'color':'#6D737A'}}>Primaire</a>
-                                <br/>
-                                <a href="#" style={{'color':'#6D737A'}}>Collège</a>
-                                <br/>
-                                <a href="#" style={{'color':'#6D737A'}}>Lycée</a>
-                                <br/>
-                                <a href="#" style={{'color':'#6D737A'}}>Université</a>
-                            </div>
-                        </div>
-                </div>
-            </div>
+            <Footer/>
         </div>
     );
 }

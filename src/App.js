@@ -12,7 +12,7 @@ import EspaceAdmin from './components/EspaceAdministrateur/EspaceAdministrateur'
 function App() {
   return (
     <div>
-      <EspaceAdmin/>
+      <LandingPage/>
     </div>
   );
 }

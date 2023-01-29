@@ -22,7 +22,7 @@ const NavBarPrin= () =>{
         </div>
         <ul>
             <Link className='smallIcon'><li><CiShoppingTag /><p>Mes Annonces</p></li></Link>
-            <Link className='smallIcon'><li><BsChatRightText/><p>Offres</p></li></Link>
+            <Link to="/MesOffres" className='smallIcon'><li><BsChatRightText/><p>Offres</p></li></Link>
             <Link className='smallIcon'><li><FaRegHeart/><p>Favoris</p></li></Link>
             <Link to='/Login' className='smallIcon'><li><CgProfile/><p>Se connecter</p></li></Link>
          </ul> 
