@@ -72,6 +72,7 @@
 .TitreInput3 {
     width: 1000px;
     height: 200px;
+    border-radius: 8px;
 }
 
 .LancerButton {

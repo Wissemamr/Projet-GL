@@ -160,7 +160,7 @@ function useInput(defaultValue) {
   /*********************************/
 
   /*********************************/
-        const StyledInput3 = styled.input`
+        const StyledTextArea1 = styled.textarea`
         display: block;
         margin: 8px 0px;
         border: 1px solid ;
@@ -285,7 +285,7 @@ function DeposerUneAnnoce() {
                 <div className="LineSeparator"></div>
                 <div className="DescriptionInput">
                     <h5 className="Input1">Description</h5>
-                    <StyledInput3 className="TitreInput3" {...inputProps3} />
+                    <StyledTextArea1 className="TitreInput3" {...inputProps3} />
                     {/*<span>Value: {inputProps3.value} </span> */}
                 </div>
                 <div className="LineSeparator"></div>
