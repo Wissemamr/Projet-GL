@@ -278,19 +278,19 @@ function DeposerUneAnnoce() {
                 <div className="LineSeparator"></div>
                 <div className="AdresseInput">
                     <h5 className="Input1">Veuillez Introduire l’adresse compléte :</h5>
-                    <StyledInput className="TitreInput2" {...inputProps2} />
+                    <StyledInput2 className="TitreInput2" {...inputProps2} />
                     {/*<span>Value: {inputProps2.value} </span>*/}
                 </div>
                 <div className="LineSeparator"></div>
                 <div className="DescriptionInput">
                     <h5 className="Input1">Description</h5>
-                    <StyledInput className="TitreInput3" {...inputProps3} />
+                    <StyledInput3 className="TitreInput3" {...inputProps3} />
                     {/*<span>Value: {inputProps3.value} </span> */}
                 </div>
                 <div className="LineSeparator"></div>
                 <div className="PrixInput">
                     <h5 className="Input1">Quel le prix par heure de ce service  ?</h5>
-                    <StyledInput className="TitreInput2" {...inputProps4} />
+                    <StyledInput4 className="TitreInput2" {...inputProps4} />
                     {/*<span>Value: {inputProps4.value} </span>*/}
                 </div>
                 <div className="LineSeparator"></div>
