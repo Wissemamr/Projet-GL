@@ -1,14 +1,16 @@
 import React,  { useState } from "react";
-import {  Link } from "react-router-dom";
 import NavBarPrin from "../NavBarPrin/NavBarPrin";
 import Footer from "../Footer/Footer";
 import styled from 'styled-components';
 import "./Offres.css"
 import {GiGraduateCap} from 'react-icons/gi'
-import {GrLocation} from 'react-icons/gr'
+import {GrLocation, GrClose} from 'react-icons/gr'
 import {CgProfile} from 'react-icons/cg'
 
 const MesOffres = () => {
+
+    const [show, setShow] = useState(false);
+
     return (
         <div>
             <NavBarPrin/>
@@ -35,7 +37,19 @@ const MesOffres = () => {
                     <div className="ApprovalButtons">
                         <button className="BtnApprouver">Approuver</button>
                         <button className="BtnRejeter">Rejeter</button>
+                        <button type="button" onClick={()=> setShow(true)} className="BtnInfos">Plus d'infos</button>
                     </div>
+                </div>
+                <div className="OffresContainerPopUp">
+                 {
+                    show && <div className="PopUp-Card">
+                                <a type="button" onClick={()=> setShow(false)} className="CloseButton"><GrClose/></a>
+                                <div className="PopUp-Card-Infos">
+                                    <h2>INFOS</h2>
+                                    <h4>more infos</h4>
+                                </div>
+                            </div>
+                 } 
                 </div>
             </div>
             <Footer/>

@@ -20,19 +20,20 @@
     flex-direction: column;
     margin-top: 30px;
     height: -moz-fit-content;
-    height: fit-content;
+    height: 1000px;
 }
 
 .OffresContainer {
+    z-index: 1;
     display: flex;
     flex-direction: row;
     gap: 10px;
     background-color: #FFFFFF;
     width: 900px;
-    height: 200px;
+    height: 240px;
     box-shadow: -2px 2px 30px rgba(0, 0, 0, 0.15);
     border-radius: 15px;
-    margin: 50px auto;
+    margin: 50px auto 30px;
     cursor: pointer;
 }
 
@@ -157,4 +158,31 @@
     color: white;
     font-size: 16px;
     cursor: pointer;
+}
+
+.BtnInfos {
+    font-size: 18px;
+    font-family: 'Public Sans';
+    font-style: normal;
+    background-color: #c5c0c2;
+    border-radius: 5px;
+    padding: 7px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.PopUp-Card {
+    margin: 230px 0px 0px 0px;
+    z-index: 2;
+    background-color: #FFFFFF;
+    opacity: 0.8;
+    position: absolute;
+    top: 0px; 
+    left: 260px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    height: 650px;
 }
