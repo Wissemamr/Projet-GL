@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans&display=swap');
+
+.TitreAdmin{
+    width: 100%;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin: 40px 0px 0px 40px;
+}
+
+.adminText1{
+    color: #06241B;
+    font-family: 'Public Sans';
+    font-style: normal;
+    margin-left: 150px;
+}
+
+.BackgroundAnnonce {
+    background-color: #FFFAF5;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    height: -moz-fit-content;
+    height: fit-content;
+}
+
+.RechercheContainer {
+    background-color: #FFFFFF;
+    width: 900px;
+    height: 650px;
+    box-shadow: -2px 2px 30px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    margin: 50px auto;
+}
+
+.TitreAdminCard {
+    color: #363A3D;
+    font-family: 'Public Sans';
+    font-style: normal;
+    margin: 40px 0px 0px 0px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.InfoAdminCard {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 25px 0px 25px;
+    gap: 6px;
+}
+
+.TextAdminCard1 {
+    color: #363A3D;
+    font-family: 'Public Sans';
+    font-style: normal;
+    font-size: 15px;
+    font-weight: 200;
+}
+
+.LancerButtonScrapping {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+    margin-bottom: 200px;
+}
+
+.btnLancerScrapping {
+    width: 150px;
+    text-align: center;
+    padding: 10px;
+    background-color: #20B486;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+    font-size: 18px;
+    font-family: 'Public Sans';
+    font-style: normal;
+}
+
+
+.TitreInput5{
+    width: 100%;
+    background-color: #F2F2F2;
+}
+
+.TitreInput6 {
+    width: 100%;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    margin: 1% 1% 0% 1%;
+} 
+
+.footerSec1 {
+    margin-top: 50px;
+    margin-left: 250px;
+}
+
+.siteLogo{
+    display: flex;
+    justify-content: flex-start;
+}
+.siteLogo img{
+    width: 30%;
+    margin-bottom: 8px;
+}
+
+.minitextUnderLogo {
+    color: #6D737A;
+    margin: 10px 0px 10px 0px;
+}
+
+.contactIcons {
+    margin : 10px 0px 10px 0px;
+    display: flex;
+    gap: 20px;
+}
+
+.miniIcon {
+    color: #20B486;
+    background-color: #c4eade;
+    border-radius: 3px;
+    padding: 3px;
+}
+
+.footerSec2 {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    margin-top: 50px;
+}
+
+.exploreUnderText {
+    color: #6D737A;
+    display: block;
+    margin: 10px 0px 0px 0px;
+}
+
+.themesUnderText {
+    color: #6D737A;
+    display: block;
+    margin: 10px 0px 0px 0px;
+}
+
+.categoriesUnderText {
+    color: #6D737A;
+    display: block;
+    margin: 10px 0px 0px 0px;
+}

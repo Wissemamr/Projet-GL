@@ -6,12 +6,13 @@ import './app.css'
 import NavBarPrin from './components/NavBarPrin/NavBarPrin';
 import LandingPage from './components/LandingPage/LandingPage';
 import { useMediaQuery } from 'react-responsive'
+import EspaceAdmin from './components/EspaceAdministrateur/EspaceAdministrateur';
 
 
 function App() {
   return (
     <div>
-      <LandingPage/>
+      <EspaceAdmin/>
     </div>
   );
 }

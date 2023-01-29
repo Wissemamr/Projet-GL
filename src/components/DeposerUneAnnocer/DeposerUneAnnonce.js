@@ -11,6 +11,7 @@ import {GiGraduateCap} from 'react-icons/gi'
 import {FaFacebookF , FaInstagram , FaLinkedinIn} from 'react-icons/fa'
 
 
+
 const StyledInput = styled.input`
 display: block;
 margin: 8px 0px;
