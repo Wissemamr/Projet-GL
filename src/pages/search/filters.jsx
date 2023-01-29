@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import NiveauIcon from "../../components/gradHat";
 import villesDz from '../../data/lieux_algerie';
+import { Calendar, DateObject } from 'react-multi-date-picker';
+import gregorian_fr from "./gregorian_fr"
+
 const modules = [
     "Math",
     "Physique",
@@ -9,6 +12,12 @@ const modules = [
     "Anglais",
     "Français"
 ]
+
+
+
+
+
+
 
 
 const Filters = (props) => {
@@ -32,9 +41,23 @@ const Filters = (props) => {
         setModule(event.target.value)
         console.log(module);
     }
+    
 
-    return (<div className="flex flex-col space-y-[36px] content-center pl-[29px] pr-[20px] pt-[30px] bg-white rounded-[16px]  w-1/4 max-w-[300px]">
-                <div className="flex flex-col justify-start space-y-[20px]">
+
+    const [values, setValues] = useState([])
+    // const handleChangeDate = () => {
+    //     if (values.format().length > 1) {
+    //         const dates = values.map((i)=>i.format())
+    //     }
+    // }
+    // console.log( .keys(employees).forEach(key => {
+    //     let value = employees[key];
+    
+    //      console.log(`${key}: ${value}`);
+    // }));
+
+    return (<div className="flex flex-col space-y-[36px] content-center pl-[20px] pr-[20px] pt-[30px] pb-14 bg-white rounded-[16px]  w-1/4 max-w-[300px] h-fit">
+                <div id='NiveauFiltre' className="flex flex-col justify-start space-y-[20px]">
                     <p className=" text-[28px] font-publicSans font-medium">Niveau</p>
                     <ul className="space-y-[12px]">
                         <li className="flex flex-row space-x-[14px] items-center ">    
@@ -58,9 +81,9 @@ const Filters = (props) => {
                                     <p className=" text-lg font-publicSans font-medium">Lycée</p>
                                 </label>
                         </li>
-                   </ul>
+                    </ul>
                 </div>
-                <div className="flex flex-col justify-start w-fill space-y-[20px]">
+                <div id='ModulesFiltre' className="flex flex-col justify-start w-fill space-y-[20px]">
                     <p className=" text-[28px] font-publicSans font-medium">Théme</p>
                     <select className="text-[22px] font-publicSans font-normal text-iconGray border-[0.5px] p-[10px]  rounded-[8px] cursor-pointer" id="ModuleList" onChange={handleChangeModule}>
                         <option value="" selected>Module</option>
@@ -70,7 +93,7 @@ const Filters = (props) => {
                         }
                     </select>
                 </div>
-                <div className="flex flex-col justify-start w-fill space-y-[20px]">
+                <div id='LieuFiltre' className="flex flex-col justify-start w-fill space-y-[20px]">
                     <p className=" text-[28px] font-publicSans font-medium">Théme</p>
                     <select className="text-[22px] font-publicSans font-normal text-iconGray border-[0.5px] p-[10px]  rounded-[8px] cursor-pointer" id="WilayaList" onChange={handleChangeWilaya}>
                         <option value="" selected>Wilaya</option>
@@ -84,6 +107,12 @@ const Filters = (props) => {
                                 item.wilaya_name_ascii === wilaya && <option value={item.commune_name_ascii}>{item.commune_name_ascii}</option>
                         ))}
                     </select>
+                </div>
+                <div id='DateFiltre' className="flex flex-col justify-start w-fill space-y-[20px]">
+                    <p className=" text-[28px] font-publicSans font-medium">Date de publication</p>
+                    <div className='flex justify-center'>
+                        <Calendar locale={gregorian_fr} value={values} onChange={setValues}  range rangeHover />
+                    </div>
                 </div>
             </div> ); }
  
