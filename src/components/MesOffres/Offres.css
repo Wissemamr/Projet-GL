@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans&display=swap');
+
+.MesOffresTitre{
+    width: 100%;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin: 50px 0px 0px 40px;
+}
+
+.MesOffresText1{
+    color: #06241B;
+    font-family: 'Public Sans';
+    font-style: normal;
+    margin-left: 150px;
+}
+
+.BackgroundOffres {
+    background-color: #FFFAF5;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    height: -moz-fit-content;
+    height: fit-content;
+}
+
+.OffresContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    background-color: #FFFFFF;
+    width: 900px;
+    height: 200px;
+    box-shadow: -2px 2px 30px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    margin: 50px auto;
+    cursor: pointer;
+}
+
+.AnnonceInfos {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #FFFFFF;
+    width: 340px;
+    height: 140px;
+    box-shadow: -2px 2px 30px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    margin: 30px auto;
+}
+
+.TextAnnoceInfos{
+    margin: 10px 0px 0px 30px;
+}
+
+.TitreAnnonceInfos{
+    color : #363A3D;
+    font-family: 'Public Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.AnnonceurPersonnalInfos{
+    margin: 70px 0px 0px 50px;
+}
+
+.persoInfos {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    font-family: 'Public Sans';
+    color: #363A3D;
+}
+
+.ProfilePic {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.ThemeAnnonceInfos {
+    color : #363A3D;
+    margin: 15px 0px 30px 0px;
+    font-family: 'Public Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.DetailsAnnonceInfos{
+    display: flex;
+    flex-direction: row;
+    gap: 120px;
+}
+
+.NiveauAnnonceInfos{
+    display: flex;
+    flex-direction: row;
+    font-family: 'Public Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    color: #279773;
+}
+
+.IconNiveauInfosAnnonce{
+    color: #20B486;
+    background-color: #c4eade;
+    border-radius: 2px;
+    margin-right: 2px;
+    padding: 2px;
+    vertical-align: middle;
+}
+
+.LocalisationAnnonceInfos {
+    display: flex;
+    flex-direction: row;
+    color: #52565C;
+    font-family: 'Public Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.IconLocalisationAnnonce{
+    color: #52565C;
+    margin-right: 2px;
+    padding: 2px;
+}
+
+.ApprovalButtons {
+    margin: 55px 30px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 130px;
+}
+
+.BtnApprouver {
+    font-size: 18px;
+    font-family: 'Public Sans';
+    font-style: normal;
+    background-color: #20B486;
+    border-radius: 5px;
+    padding: 7px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.BtnRejeter {
+    font-size: 18px;
+    font-family: 'Public Sans';
+    font-style: normal;
+    background-color: #ED4459;
+    border-radius: 5px;
+    padding: 7px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
