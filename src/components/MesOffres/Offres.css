@@ -34,7 +34,6 @@
     box-shadow: -2px 2px 30px rgba(0, 0, 0, 0.15);
     border-radius: 15px;
     margin: 50px auto 30px;
-    cursor: pointer;
 }
 
 .AnnonceInfos {
@@ -176,13 +175,178 @@
     margin: 230px 0px 0px 0px;
     z-index: 2;
     background-color: #FFFFFF;
-    opacity: 0.8;
+    opacity: 0.9;
     position: absolute;
     top: 0px; 
     left: 260px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 1000px;
-    height: 650px;
+    height: fit-content;
+   box-shadow: -2px 2px 30px rgba(0, 0, 0, 0.15);
+   border-radius: 15px;
+}
+
+
+.GrClose {
+    margin: 20px 0px 0px 30px;  
+}
+
+.PopUp-Card-Infos {
+    display: flex;
+    flex-direction: column;
+}
+
+.ApprovalButtons2 {
+    margin: 20px 30px 30px 25px;
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+}
+
+.BtnApprouver2{
+    width: 500px;
+    font-size: 18px;
+    font-family: 'Public Sans';
+    font-style: normal;
+    background-color: #20B486;
+    border-radius: 5px;
+    padding: 7px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.BtnRejeter2 {
+    width: 500px;
+    font-size: 18px;
+    font-family: 'Public Sans';
+    font-style: normal;
+    background-color: #ED4459;
+    border-radius: 5px;
+    padding: 7px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.OffresDescriptionDetails {
+    margin: 30px 30px 0px 30px;
+}
+
+.OffresDescriptionTitre {
+    color: #363A3D;
+    font-family: 'Public Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.OffresDescriptionTexte {
+    color: #363A3D;
+    margin-top: 15px;
+    background: #F2F2F2;
+    border-radius: 8px;
+    padding: 10px;
+    gap: 10px;
+    font-family: 'Public Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.OffresInfosPersonneDetails {
+    display: grid;
+    grid-template-columns: 50% 40%;
+    grid-gap: 15%;
+    margin: 1% 1% 0% 1%;
+}
+
+.OffresCardInfosDetails1 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #FFFFFF;
+    width: 500px;
+    height: 200px;
+    box-shadow: -1px 1px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    margin: 10px 0px 0px 20px;
+}
+
+.OffresCardInfosDetails2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #FFFFFF;
+    width: 300px;
+    height: 200px;
+    box-shadow: -1px 1px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    margin: 10px 0px 0px 20px;
+}
+
+.infos1 {
+    margin: 30px 0px 0px 40px;
+    color: #363A3D;
+    font-family: 'Public Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+}
+
+.mailOffers {
+    margin: 15px 0px 0px 40px;
+    color: #363A3D;
+    font-family: 'Public Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;   
+}
+
+.numOffers {
+    margin: 1px 0px 20px 40px;
+    color: #363A3D;
+    font-family: 'Public Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;   
+}
+
+.infos2{
+    margin: 30px 0px 0px 40px;
+    color: #363A3D;
+    font-family: 'Public Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 28px;
+}
+
+.titleOffersDetails {
+    color: #363A3D;
+    margin-left: 40px;
+    font-family: 'Public Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 28px;
+}
+
+.themeOffersDetails {
+    color: #363A3D;
+    margin-left: 40px;
+    font-family: 'Public Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 28px;
+}
+
+.DetailsAnnonceInfos2 {
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+    margin-left: 40px;
 }

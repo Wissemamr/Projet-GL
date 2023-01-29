@@ -43,10 +43,32 @@ const MesOffres = () => {
                 <div className="OffresContainerPopUp">
                  {
                     show && <div className="PopUp-Card">
-                                <a type="button" onClick={()=> setShow(false)} className="CloseButton"><GrClose/></a>
+                                <a type="button" onClick={()=> setShow(false)} className="CloseButton"><GrClose size={20} className="GrClose"/></a>
                                 <div className="PopUp-Card-Infos">
-                                    <h2>INFOS</h2>
-                                    <h4>more infos</h4>
+                                     <div className="OffresInfosPersonneDetails">
+                                        <div className="OffresCardInfosDetails1">
+                                            <h4 className="infos1">Nom & Prénom</h4>
+                                            <h5 className="mailOffers">exemple@email.com</h5>
+                                            <h5 className="numOffers">+213 555 555 555</h5>
+                                        </div>
+                                        <div className="OffresCardInfosDetails2">
+                                            <h4 className="infos2">Nom & Prénom</h4>
+                                            <h5 className="titleOffersDetails">Titre</h5>
+                                            <h5 className="themeOffersDetails">Thème</h5>
+                                            <div className="DetailsAnnonceInfos2">
+                                                <h5 className="NiveauAnnonceInfos"><GiGraduateCap size={20} className="IconNiveauInfosAnnonce"/>Primaire</h5>
+                                                <h5 className="LocalisationAnnonceInfos"><GrLocation size={20} className="IconLocalisationAnnonce"/>Blida</h5>
+                                            </div>
+                                        </div>
+                                     </div>
+                                     <div className="OffresDescriptionDetails">
+                                        <h3 className="OffresDescriptionTitre">Description</h3>
+                                        <h4 className="OffresDescriptionTexte">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h4>
+                                     </div>
+                                     <div className="ApprovalButtons2">
+                                        <button className="BtnApprouver2">Approuver</button>
+                                        <button className="BtnRejeter2">Rejeter</button>
+                                    </div>
                                 </div>
                             </div>
                  } 
