@@ -19,9 +19,6 @@ const NiveauIcon = (props) => {
                 </div>;
     }
 
-
-    
-    
     return ( <div className="w-fit bg-myLightRed p-[10px] rounded-lg ">
             <img src={gradIconRed} alt='gradIcon' className="h-[20px] w-[20px]" /> 
        </div> );

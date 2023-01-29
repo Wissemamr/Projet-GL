@@ -12,12 +12,8 @@ const modules = [
     "Anglais",
     "Français"
 ]
-
-
-
-
-
-
+let date2 = ''
+let date1 = ''
 
 
 const Filters = (props) => {
@@ -25,13 +21,10 @@ const Filters = (props) => {
     const [wilaya, setWilaya] = useState('');
     const handleChangeWilaya = (event) => {
         setWilaya(event.target.value);
-        console.log(wilaya)
-        console.log(wilaya)
     }
 
     const [commune, setCommune] = useState('');
     const handleChangeCommune = (event) =>{
-        console.log(wilaya)
         setCommune(event.target.value)
         console.log(commune);
     }
@@ -43,40 +36,46 @@ const Filters = (props) => {
     }
     
 
-
     const [values, setValues] = useState([])
-    // const handleChangeDate = () => {
-    //     if (values.format().length > 1) {
-    //         const dates = values.map((i)=>i.format())
-    //     }
-    // }
-    // console.log( .keys(employees).forEach(key => {
-    //     let value = employees[key];
     
-    //      console.log(`${key}: ${value}`);
-    // }));
+    if (values.length>0 && values.length <2) {
+        date1 = values[0].format()
+        date2 = null
+    } else if (values.length>1) {
+        date1 = values[0].format()
+        date2 = values[1].format()
+    }
 
-    return (<div className="flex flex-col space-y-[36px] content-center pl-[20px] pr-[20px] pt-[30px] pb-14 bg-white rounded-[16px]  w-1/4 max-w-[300px] h-fit">
+    const handleDateReset = () =>{
+        date1 = null
+        date2 = null
+        setValues([]) 
+    }
+
+    console.log(date1);
+    console.log(date2);
+
+    return (<div className="flex flex-col space-y-[36px] content-center pl-[20px] pr-[20px] pt-[30px] pb-14 bg-white rounded-[16px]  w-1/4 max-w-[300px] h-fit ">
                 <div id='NiveauFiltre' className="flex flex-col justify-start space-y-[20px]">
                     <p className=" text-[28px] font-publicSans font-medium">Niveau</p>
                     <ul className="space-y-[12px]">
-                        <li className="flex flex-row space-x-[14px] items-center ">    
-                                <input id="default-checkbox" type="checkbox" value="" class="w-[18px] h-[18px] cursor-pointer"/>
-                                <label for="default-checkbox" className="flex flex-row justify-start items-center gap-[5px] w-full ">
+                        <li className="flex flex-row space-x-[14px] items-center w-fit">    
+                                <input id="primaire" type="checkbox" value="" class="w-[18px] h-[18px] cursor-pointer"/>
+                                <label for="primaire" className="flex flex-row justify-start items-center gap-[5px] w-full cursor-pointer ">
                                     <NiveauIcon level="primaire" ></NiveauIcon>            
                                     <p className=" text-lg font-publicSans font-medium">Primaire</p>
                                 </label>
                         </li>
-                        <li className="flex flex-row space-x-[14px] items-center ">    
-                                <input id="default-checkbox" type="checkbox" value="" class="w-[18px] h-[18px] cursor-pointer"/>
-                                <label for="default-checkbox" className="flex flex-row justify-start items-center gap-[5px] w-full ">
+                        <li className="flex flex-row space-x-[14px] items-center  w-fit">    
+                                <input id="collége" type="checkbox" value="" class="w-[18px] h-[18px] cursor-pointer"/>
+                                <label for="collége" className="flex flex-row justify-start items-center gap-[5px] w-full cursor-pointer">
                                     <NiveauIcon level="collége" ></NiveauIcon>            
                                     <p className=" text-lg font-publicSans font-medium">Collége</p>
                                 </label>
                         </li>
-                        <li className="flex flex-row space-x-[14px] items-center ">    
-                                <input id="default-checkbox" type="checkbox" value="" class="w-[18px] h-[18px] cursor-pointer"/>
-                                <label for="default-checkbox" className="flex flex-row justify-start items-center gap-[5px] w-full ">
+                        <li className="flex flex-row space-x-[14px] items-center  w-fit">    
+                                <input id="lycée" type="checkbox" value="" class="w-[18px] h-[18px] cursor-pointer"/>
+                                <label for="lycée" className="flex flex-row justify-start items-center gap-[5px] w-full cursor-pointer">
                                     <NiveauIcon level="lycée" ></NiveauIcon>            
                                     <p className=" text-lg font-publicSans font-medium">Lycée</p>
                                 </label>
@@ -110,10 +109,11 @@ const Filters = (props) => {
                 </div>
                 <div id='DateFiltre' className="flex flex-col justify-start w-fill space-y-[20px]">
                     <p className=" text-[28px] font-publicSans font-medium">Date de publication</p>
-                    <div className='flex justify-center'>
-                        <Calendar locale={gregorian_fr} value={values} onChange={setValues}  range rangeHover />
+                    <div className='flex flex-col justify-center space-y-3 '>
+                        <Calendar locale={gregorian_fr} value={values} onChange={setValues} range rangeHover />
+                        <button className='bg-myBlue h-8 w-full text-white font-publicSans font-normal rounded-md shadow-lg' onClick={handleDateReset} >Réinitialiser</button>
                     </div>
-                </div>
+                </div>          
             </div> ); }
  
 export default Filters;
