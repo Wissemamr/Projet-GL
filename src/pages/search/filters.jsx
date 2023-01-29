@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import NiveauIcon from "../../components/gradHat";
 import villesDz from '../../data/lieux_algerie';
-import { Calendar, DateObject } from 'react-multi-date-picker';
+import { Calendar } from 'react-multi-date-picker';
 import gregorian_fr from "./gregorian_fr"
 
 const modules = [
