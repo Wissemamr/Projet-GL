@@ -4,7 +4,9 @@ import Footer from "../Footer/Footer";
 import './TrouverCours.css'
 import styled from 'styled-components';
 import { useRef } from "react";
+import {Routes, Route, useNavigate} from 'react-router-dom';
 import {MdOutlineArrowBackIosNew, MdOutlineArrowForwardIos} from 'react-icons/md'
+
 
 
 const TrouverCours = () => {
@@ -22,6 +24,12 @@ const TrouverCours = () => {
             e.preventDefault();
             slider3.current.scrollLeft += slider3.current.offsetWidth;
         } 
+
+        const navigate = useNavigate();
+
+        const navigateToPostulerCours = () => {
+            navigate('/PostulerCours');
+          };
 
     return (
         <div>
@@ -53,7 +61,7 @@ const TrouverCours = () => {
                                 <h5>+213 555 555 555</h5>
                                 <h5>Lorem Ipsum, lorem Ipsum, Algerie</h5>
                             </div>
-                            <button className="InscriptionCours">S'inscrire au cours</button>
+                            <button onClick={navigateToPostulerCours} className="InscriptionCours">S'inscrire au cours</button>
                         </div>
                     </div>
                     <div className="LineSeparator3"></div>
@@ -83,7 +91,9 @@ const TrouverCours = () => {
                     <div className="TrouverCoursLocation">
                         <h3 className="TrouverCoursText">Location</h3>
                         <h4 className="textDesc2">1 rue BabEdzair, Blida, Algérie</h4>
-                       
+                        <div>
+                            
+                        </div>
                     </div>
                     <div className="LineSeparator3"></div>
                     <div className="TrouverCoursSlider">

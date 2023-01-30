@@ -35,6 +35,20 @@
     grid-template-columns: 50% 50%;
 }
 
+.InscriptionCours {
+    width: 300px;
+    font-size: 18px;
+    font-family: 'Public Sans';
+    font-style: normal;
+    background-color: #20B486;
+    border-radius: 5px;
+    padding: 7px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin: auto;
+}
+
 .Picture11 {
     background-color: pink;
     width: 360px;

@@ -53,7 +53,6 @@ const PostulerCours = () => {
                         <h5>+213 555 555 555</h5>
                         <h5>Lorem Ipsum, lorem Ipsum, Algerie</h5>
                     </div>
-                    <button className="InscriptionCours">S'inscrire au cours</button>
                 </div>
             </div>
             <div className="LineSeparator2"></div>
