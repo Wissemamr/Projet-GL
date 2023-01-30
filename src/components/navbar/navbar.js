@@ -8,7 +8,7 @@ import {HiSearch} from 'react-icons/hi'
 import {BsChatRightText} from 'react-icons/bs'
 import {CiShoppingTag} from 'react-icons/ci'
 import {GoDiffAdded} from 'react-icons/go'
-
+import Notification from '../notification/notification';
 
 const NavBarPrin= () =>{
     return (
@@ -21,6 +21,7 @@ const NavBarPrin= () =>{
           </ul>
         </div>
         <ul>
+            <div className='smallIcon'><li><Notification/><p>Mes Annonces</p></li></div>
             <div className='smallIcon'><li><CiShoppingTag /><p>Mes Annonces</p></li></div>
             <div className='smallIcon'><li><BsChatRightText/><p>Offres</p></li></div>
             <div className='smallIcon'><li><FaRegHeart/><p>Favoris</p></li></div>
