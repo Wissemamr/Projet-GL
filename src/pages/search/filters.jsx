@@ -52,36 +52,46 @@ const Filters = (props) => {
         setValues([]) 
     }
 
-    console.log(date1);
-    console.log(date2);
+    //Checkbox Filters for the Levels
+
+    const checkboxesList = [
+        "Primaire",
+        "Collége",
+        "Lycée"
+      ];
+      
+      const getDefaultCheckboxes = () =>
+        checkboxesList.map(checkbox => ({
+          name: checkbox,
+          checked: false,
+        }));
+      
+      
+      const [checkboxes, setCheckboxes] = useState(getDefaultCheckboxes());
+      const setCheckbox = (index, checked) => {  
+            const newCheckboxes = [...checkboxes];
+            newCheckboxes[index].checked = checked;
+            setCheckboxes(newCheckboxes);
+            console.log(checkboxes);
+      }
+
 
     return (<div className="flex flex-col space-y-[36px] content-center pl-[20px] pr-[20px] pt-[30px] pb-14 bg-white rounded-[16px]  w-1/4 max-w-[300px] h-fit ">
                 <div id='NiveauFiltre' className="flex flex-col justify-start space-y-[20px]">
                     <p className=" text-[28px] font-publicSans font-medium">Niveau</p>
                     <ul className="space-y-[12px]">
-                        <li className="flex flex-row space-x-[14px] items-center w-fit">    
-                                <input id="primaire" type="checkbox" value="" class="w-[18px] h-[18px] cursor-pointer"/>
-                                <label for="primaire" className="flex flex-row justify-start items-center gap-[5px] w-full cursor-pointer ">
-                                    <NiveauIcon level="primaire" ></NiveauIcon>            
-                                    <p className=" text-lg font-publicSans font-medium">Primaire</p>
+                    { checkboxes.map((checkbox, i) => 
+                    (
+                      <li className="flex flex-row space-x-[14px] items-center w-fit">    
+                                <input checked={checkbox.checked} onChange={e => { setCheckbox(i, e.target.checked);}} type="checkbox" value="" class="w-[18px] h-[18px] cursor-pointer"/>
+                                <label className="flex flex-row justify-start items-center gap-[5px] w-full cursor-pointer ">
+                                    <NiveauIcon level={checkbox.name} ></NiveauIcon>            
+                                    <p className=" text-lg font-publicSans font-medium">{checkbox.name}</p>
                                 </label>
-                        </li>
-                        <li className="flex flex-row space-x-[14px] items-center  w-fit">    
-                                <input id="collége" type="checkbox" value="" class="w-[18px] h-[18px] cursor-pointer"/>
-                                <label for="collége" className="flex flex-row justify-start items-center gap-[5px] w-full cursor-pointer">
-                                    <NiveauIcon level="collége" ></NiveauIcon>            
-                                    <p className=" text-lg font-publicSans font-medium">Collége</p>
-                                </label>
-                        </li>
-                        <li className="flex flex-row space-x-[14px] items-center  w-fit">    
-                                <input id="lycée" type="checkbox" value="" class="w-[18px] h-[18px] cursor-pointer"/>
-                                <label for="lycée" className="flex flex-row justify-start items-center gap-[5px] w-full cursor-pointer">
-                                    <NiveauIcon level="lycée" ></NiveauIcon>            
-                                    <p className=" text-lg font-publicSans font-medium">Lycée</p>
-                                </label>
-                        </li>
+                      </li>
+                    ))}
                     </ul>
-                </div>
+                </div>  
                 <div id='ModulesFiltre' className="flex flex-col justify-start w-fill space-y-[20px]">
                     <p className=" text-[28px] font-publicSans font-medium">Théme</p>
                     <select className="text-[22px] font-publicSans font-normal text-iconGray border-[0.5px] p-[10px]  rounded-[8px] cursor-pointer" id="ModuleList" onChange={handleChangeModule}>

@@ -1,10 +1,13 @@
 import './App.css';
- import Search from './pages/search/search';
-function App() {
-  return (
-      <Search>
+import Search from './pages/search/search';
+import NiveauIcon from './components/gradHat';
+import React, { useState } from 'react';
 
-      </Search>
+
+function App() {
+
+  return (
+    <Search></Search>
     );
 }
 
