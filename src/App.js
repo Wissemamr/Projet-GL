@@ -6,6 +6,7 @@ import './app.css'
 import NavBarPrin from './components/NavBarPrin/NavBarPrin';
 import LandingPage from './components/LandingPage/LandingPage';
 import PostulerCours from './components/PostulerCours/PostulerCours';
+import TrouverCours from './components/TrouverCours/TrouverCours';
 import { useMediaQuery } from 'react-responsive'
 import EspaceAdmin from './components/EspaceAdministrateur/EspaceAdministrateur';
 
@@ -13,7 +14,7 @@ import EspaceAdmin from './components/EspaceAdministrateur/EspaceAdministrateur'
 function App() {
   return (
     <div>
-      <PostulerCours/>
+      <LandingPage/>
     </div>
   );
 }

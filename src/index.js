@@ -13,6 +13,8 @@ import {
 import Navbar from "./components/NavBar/NavBar";
 import DeposerUneAnnoce from "./components/DeposerUneAnnocer/DeposerUneAnnonce";
 import MesOffres from "./components/MesOffres/Offres";
+import TrouverCours from "./components/TrouverCours/TrouverCours";
+import PostulerCours from "./components/PostulerCours/PostulerCours";
 
 
 
@@ -24,6 +26,8 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       <Route path='/navbar' element={<Navbar/>}/>    
       <Route path='/DeposerUneAnnoce' element={<DeposerUneAnnoce/>}/> 
       <Route path='/MesOffres' element={<MesOffres/>}/> 
+      <Route path="/PostulerCours" element={<PostulerCours/>} />
+      <Route path="/TrouverCours" element={<TrouverCours/>} />
     </Routes>
   </BrowserRouter>
 );

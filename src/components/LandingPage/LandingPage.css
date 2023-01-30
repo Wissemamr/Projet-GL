@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans&display=swap');
 
-
-.landingpage {
+ .landingpage {
     display: grid;
     grid-template-columns: 50% 45%;
     grid-gap: 5%;
@@ -12,8 +11,6 @@
     background-position: center;
     
 } 
-
-
 .backgroundWoman{
     display: flex;
     justify-content: flex-start;
@@ -210,13 +207,13 @@
 }
 
 .themecardBtn {
-    width: 250px;
+    width: 260px;
     height: 60px;
     background: #FFFFFF;
     /*border: 1px solid #20B486;*/
     box-shadow: 0px 3px 12px rgba(75, 75, 75, 0.08);
     border-radius: 8px;
-    font-size: 18px;
+    font-size: 17px;
 }
 
 .themecardBtn:hover {
@@ -428,4 +425,25 @@
     color: #6D737A;
     display: block;
     margin: 10px 0px 0px 0px;
+}
+
+.slider-card-Title {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    font-family: 'Public Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    color: #1B1D1F;
+}
+
+.slider-card-Description {
+    display: flex;
+    justify-content: center;
+    color: #6D737A;
+    font-family: 'Public Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
 }

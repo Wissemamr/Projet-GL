@@ -3,6 +3,7 @@ import NavBarPrin from "../NavBarPrin/NavBarPrin";
 import Footer from "../Footer/Footer";
 import SearchBar from "../Search/search";
 import "./LandingPage.css"
+import  Card from "./course_card"
 import backgroundWoman from './backgroundWoman.svg'
 import backgroundWoman2 from './backgroundWoman2.svg'
 import backgroundppl from './backgroundppl.svg'
@@ -47,10 +48,8 @@ function LandingPage() {
             <div className="landingpage">
                 <div className="text">
                     <h3 className="text1">VOTRE DÉPART VERS LE SUCCÈS</h3>
-                    <h1 className="text3">Lorem Ipsum 5000+ lorem
-                    lorem 300 lorem 
-                    et lorem</h1>
-                    <h5 className="text2">Le soutien scolaire, comme vous l’avez jamais connu</h5>
+                    <h1 className="text3"><span style={{'color':"#20B486"}}>SCHOOLERS</span> votre partenaire dans l'excellence académique</h1>
+                    <h5 className="text2">Des cours de soutien scolaire approuvés pour tous les niveaux</h5>
                     <SearchBar className="searchBar1"/>
                 </div>
                 <div className="backgroundWoman">
@@ -98,18 +97,18 @@ function LandingPage() {
                     <h5>Améliorer vos  rendements dans  des modules précis</h5>
                 </div>
                 <div className="ThemesCards" >
-                    <button className="themecardBtn"> <BsVectorPen size={20}/> Lorem Ipsum <BsArrowUpRight className="rightarrowTheme" /> </button>
-                    <button className="themecardBtn"> <BsVectorPen size={20}/> Lorem Ipsum <BsArrowUpRight className="rightarrowTheme"/> </button>
-                    <button className="themecardBtn"> <BsVectorPen size={20}/> Lorem Ipsum <BsArrowUpRight className="rightarrowTheme"/> </button>
-                    <button className="themecardBtn"> <BsVectorPen size={20}/> Lorem Ipsum <BsArrowUpRight className="rightarrowTheme"/> </button>
-                    <button className="themecardBtn"> <BsVectorPen size={20}/> Lorem Ipsum <BsArrowUpRight className="rightarrowTheme"/> </button>
-                    <button className="themecardBtn"> <BsVectorPen size={20}/> Lorem Ipsum <BsArrowUpRight className="rightarrowTheme"/> </button>
-                    <button className="themecardBtn"> <BsVectorPen size={20}/> Lorem Ipsum <BsArrowUpRight className="rightarrowTheme"/> </button>
-                    <button className="themecardBtn"> <BsVectorPen size={20}/> Lorem Ipsum <BsArrowUpRight className="rightarrowTheme"/> </button>
-                    <button className="themecardBtn"> <BsVectorPen size={20}/> Lorem Ipsum <BsArrowUpRight className="rightarrowTheme"/> </button>
-                    <button className="themecardBtn"> <BsVectorPen size={20}/> Lorem Ipsum <BsArrowUpRight className="rightarrowTheme"/> </button>
-                    <button className="themecardBtn"> <BsVectorPen size={20}/> Lorem Ipsum <BsArrowUpRight className="rightarrowTheme"/> </button>
-                    <button className="themecardBtn"> <BsVectorPen size={20}/> Lorem Ipsum <BsArrowUpRight className="rightarrowTheme"/> </button>
+                    <button className="themecardBtn"> <BsVectorPen size={20}/> Mathématiques <BsArrowUpRight className="rightarrowTheme" /> </button>
+                    <button className="themecardBtn"> <BsVectorPen size={20}/> Physique <BsArrowUpRight className="rightarrowTheme"/> </button>
+                    <button className="themecardBtn"> <BsVectorPen size={20}/> Science de la vie <BsArrowUpRight className="rightarrowTheme"/> </button>
+                    <button className="themecardBtn"> <BsVectorPen size={20}/> Littérature française <BsArrowUpRight className="rightarrowTheme"/> </button>
+                    <button className="themecardBtn"> <BsVectorPen size={20}/> Littérature arabe <BsArrowUpRight className="rightarrowTheme"/> </button>
+                    <button className="themecardBtn"> <BsVectorPen size={20}/> Littérature anglaise <BsArrowUpRight className="rightarrowTheme"/> </button>
+                    <button className="themecardBtn"> <BsVectorPen size={20}/> Anglais <BsArrowUpRight className="rightarrowTheme"/> </button>
+                    <button className="themecardBtn"> <BsVectorPen size={20}/> Chimie <BsArrowUpRight className="rightarrowTheme"/> </button>
+                    <button className="themecardBtn"> <BsVectorPen size={20}/> Histoire et géographie <BsArrowUpRight className="rightarrowTheme"/> </button>
+                    <button className="themecardBtn"> <BsVectorPen size={20}/> Philosophie <BsArrowUpRight className="rightarrowTheme"/> </button>
+                    <button className="themecardBtn"> <BsVectorPen size={20}/> Comptabilite et gestion <BsArrowUpRight className="rightarrowTheme"/> </button>
+                    <button className="themecardBtn"> <BsVectorPen size={20}/> Dessin <BsArrowUpRight className="rightarrowTheme"/> </button>
                 </div>
             </div>
             <div className="Instructeurs">
