@@ -76,7 +76,7 @@ const Filters = (props) => {
       }
 
 
-    return (<div className="flex flex-col space-y-[36px] content-center pl-[20px] pr-[20px] pt-[30px] pb-14 bg-white rounded-[16px]  w-1/4 max-w-[300px] h-fit ">
+    return (<div className="flex flex-col space-y-[36px] content-center pl-[20px] pr-[20px] pt-[30px] pb-14 bg-white rounded-[16px]  w-1/4 max-w-[300px] h-fit shadow-lg ">
                 <div id='NiveauFiltre' className="flex flex-col justify-start space-y-[20px]">
                     <p className=" text-[28px] font-publicSans font-medium">Niveau</p>
                     <ul className="space-y-[12px]">

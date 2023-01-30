@@ -1,0 +1,70 @@
+* {
+    text-decoration: none;
+}
+
+
+
+.NavBarPrin {
+    background-color: #ffffff;
+    border: 1px solid rgb(213, 210, 210);
+    color: rgb(30, 28, 28);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding: 0 1rem;
+}
+
+.elements1 {
+    margin: auto;
+}
+ 
+
+.NavBarPrin ul {
+    padding: 0;
+    margin: auto;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+
+
+.btn1{
+    background-color: #20B486;
+    width: max-content;
+    width: 100%;
+    max-width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.DepotAnnonce {
+  box-sizing: border-box;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.annonce{
+    vertical-align: middle;
+}
+
+
+
+
+.smallIcon *{
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

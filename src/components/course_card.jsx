@@ -1,6 +1,6 @@
 import React from "react"
 //import pict1 from '../assets/images/pict1.jpg'
-import pict2 from '../assets/images/pict2.jpg'
+import pict2 from '../assets/images/pict1.jpg'
 import NiveauIcon from "./gradHat";
 import locIcon from "../assets/vectors/location.svg"
 import AjouterFav from "./ajouterFav";
