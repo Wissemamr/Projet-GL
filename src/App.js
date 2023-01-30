@@ -8,7 +8,7 @@ import NavBarPrin from './components/navbar/navbar';
 //import Navbarprin from './components/navbar/navbar';
 function App() {
   return (
-    <Search></Search>
+    <Mesannonce></Mesannonce>
   );
 }
 

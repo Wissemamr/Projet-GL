@@ -21,7 +21,7 @@ const NavBarPrin= () =>{
           </ul>
         </div>
         <ul>
-            <div className='smallIcon'><li><Notification/><p>Mes Annonces</p></li></div>
+            <div className='smallIcon'><li><Notification/><p>Mes Notifications</p></li></div>
             <div className='smallIcon'><li><CiShoppingTag /><p>Mes Annonces</p></li></div>
             <div className='smallIcon'><li><BsChatRightText/><p>Offres</p></li></div>
             <div className='smallIcon'><li><FaRegHeart/><p>Favoris</p></li></div>
