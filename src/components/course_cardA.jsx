@@ -1,5 +1,6 @@
 import React from "react"
 import delicon from '../assets/vectors/delete.svg'
+import editicon from '../assets/vectors/edit.svg'
 import pict2 from '../assets/images/pict1.jpg'
 import NiveauIcon from "./gradHat";
 import locIcon from "../assets/vectors/location.svg"
@@ -12,11 +13,16 @@ const Cardfav = (props) => {
     <div className="bg-white flex flex-col justify-center gap-[16px] items-center p-4 rounded-2xl w-[312px] shadow-md">
         {/* Image Display */}
         <div className="relative container ">
-            <img src={delicon} alt="delIcon" className="absolute right-2 top-2 flex gap-1 cursor-pointer"/>
+            <div className="absolute right-2 top-2 flex gap-1">
+                <img src={delicon} alt="delIcon" className="cursor-pointer"/>
+                <img src={editicon} alt="editicon" className="cursor-pointer"/>
+            </div>
+            
             <img src={pict2} alt='coursePic' className="h-[210px] w-full object-cover rounded-xl" />
             <div className="bg-white bg-opacity-60 absolute left-2 top-2 p-1 rounded text-base font-publicSans font-medium  ">
                 Lorem
             </div>
+            
         </div>
 
         {/* Profile name + Picture  */}

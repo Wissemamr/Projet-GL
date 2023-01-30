@@ -43,5 +43,5 @@ const Favoris = (props) => {
         
     );
 }
- 
+
 export default Favoris;
