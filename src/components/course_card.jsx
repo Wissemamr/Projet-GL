@@ -30,7 +30,7 @@ const Card = (props) => {
         {/* Niveau & Ville */}
         <div className="flex flex-row content-center w-full">
             <div className="flex justify-start items-center gap-[5px] w-full " >
-                <NiveauIcon level="primaire" ></NiveauIcon>            
+                <NiveauIcon level="Primaire" ></NiveauIcon>            
                 <p className="text-myGreen text-lg font-publicSans font-medium">Primaire</p>
             </div>
             <div className="flex justify-end items-center gap-[10px] w-full " >
