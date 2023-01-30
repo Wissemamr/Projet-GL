@@ -1,6 +1,6 @@
 import React,  { useState } from "react";
 import styled from 'styled-components';
-import siteLogo from './siteLogo.svg'
+import siteLogo from './LogoFinal.svg'
 import {MdOutlineArrowBackIosNew, MdOutlineArrowForwardIos} from 'react-icons/md'
 import {FaRegHeart} from 'react-icons/fa'
 import {BsArrowUpRight , BsVectorPen} from 'react-icons/bs'

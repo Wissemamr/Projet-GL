@@ -1,6 +1,6 @@
 import React from 'react';
 import {  Link } from "react-router-dom";
-import logo from "../../Frame 105.png"
+import logo from "../../LogoFinal.svg"
 import "./NavBarPrin.css"
 import {CgProfile} from 'react-icons/cg'
 import {FaRegHeart} from 'react-icons/fa'

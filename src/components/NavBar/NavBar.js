@@ -1,5 +1,5 @@
 import "./NavBar.css";
-import logo from "../../Frame 105.png"
+import logo from "../../LogoFinal.svg"
 import {AiFillSafetyCertificate} from 'react-icons/ai'
 import {HiOutlineArrowLeft} from 'react-icons/hi'
 import {Link} from "react-router-dom"
