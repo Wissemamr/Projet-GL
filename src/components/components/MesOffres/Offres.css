@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans&display=swap');
+
+.MesOffresTitre{
+    width: 100%;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin: 50px 0px 0px 40px;
+}
+
+.MesOffresText1{
+    color: #06241B;
+    font-family: 'Public Sans';
+    font-style: normal;
+    margin-left: 150px;
+}
+
+.BackgroundOffres {
+    background-color: #FFFAF5;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    height: -moz-fit-content;
+    height: 1000px;
+}
+
+.OffresContainer {
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    background-color: #FFFFFF;
+    width: 900px;
+    height: 240px;
+    box-shadow: -2px 2px 30px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    margin: 50px auto 30px;
+}
+
+.AnnonceInfos {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #FFFFFF;
+    width: 340px;
+    height: 140px;
+    box-shadow: -2px 2px 30px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    margin: 30px auto;
+}
+
+.TextAnnoceInfos{
+    margin: 10px 0px 0px 30px;
+}
+
+.TitreAnnonceInfos{
+    color : #363A3D;
+    font-family: 'Public Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.AnnonceurPersonnalInfos{
+    margin: 70px 0px 0px 50px;
+}
+
+.persoInfos {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    font-family: 'Public Sans';
+    color: #363A3D;
+}
+
+.ProfilePic {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.ThemeAnnonceInfos {
+    color : #363A3D;
+    margin: 15px 0px 30px 0px;
+    font-family: 'Public Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.DetailsAnnonceInfos{
+    display: flex;
+    flex-direction: row;
+    gap: 120px;
+}
+
+.NiveauAnnonceInfos{
+    display: flex;
+    flex-direction: row;
+    font-family: 'Public Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    color: #279773;
+}
+
+.IconNiveauInfosAnnonce{
+    color: #20B486;
+    background-color: #c4eade;
+    border-radius: 2px;
+    margin-right: 2px;
+    padding: 2px;
+    vertical-align: middle;
+}
+
+.LocalisationAnnonceInfos {
+    display: flex;
+    flex-direction: row;
+    color: #52565C;
+    font-family: 'Public Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.IconLocalisationAnnonce{
+    color: #52565C;
+    margin-right: 2px;
+    padding: 2px;
+}
+
+.ApprovalButtons {
+    margin: 55px 30px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 130px;
+}
+
+.BtnApprouver {
+    font-size: 18px;
+    font-family: 'Public Sans';
+    font-style: normal;
+    background-color: #20B486;
+    border-radius: 5px;
+    padding: 7px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.BtnRejeter {
+    font-size: 18px;
+    font-family: 'Public Sans';
+    font-style: normal;
+    background-color: #ED4459;
+    border-radius: 5px;
+    padding: 7px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.BtnInfos {
+    font-size: 18px;
+    font-family: 'Public Sans';
+    font-style: normal;
+    background-color: #c5c0c2;
+    border-radius: 5px;
+    padding: 7px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.PopUp-Card {
+    margin: 230px 0px 0px 0px;
+    z-index: 2;
+    background-color: #FFFFFF;
+    opacity: 0.9;
+    position: absolute;
+    top: 0px; 
+    left: 260px;
+    width: 1000px;
+    height: fit-content;
+   box-shadow: -2px 2px 30px rgba(0, 0, 0, 0.15);
+   border-radius: 15px;
+}
+
+
+.GrClose {
+    margin: 20px 0px 0px 30px;  
+}
+
+.PopUp-Card-Infos {
+    display: flex;
+    flex-direction: column;
+}
+
+.ApprovalButtons2 {
+    margin: 20px 30px 30px 25px;
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+}
+
+.BtnApprouver2{
+    width: 500px;
+    font-size: 18px;
+    font-family: 'Public Sans';
+    font-style: normal;
+    background-color: #20B486;
+    border-radius: 5px;
+    padding: 7px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.BtnRejeter2 {
+    width: 500px;
+    font-size: 18px;
+    font-family: 'Public Sans';
+    font-style: normal;
+    background-color: #ED4459;
+    border-radius: 5px;
+    padding: 7px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.OffresDescriptionDetails {
+    margin: 30px 30px 0px 30px;
+}
+
+.OffresDescriptionTitre {
+    color: #363A3D;
+    font-family: 'Public Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.OffresDescriptionTexte {
+    color: #363A3D;
+    margin-top: 15px;
+    background: #F2F2F2;
+    border-radius: 8px;
+    padding: 10px;
+    gap: 10px;
+    font-family: 'Public Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.OffresInfosPersonneDetails {
+    display: grid;
+    grid-template-columns: 50% 40%;
+    grid-gap: 15%;
+    margin: 1% 1% 0% 1%;
+}
+
+.OffresCardInfosDetails1 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #FFFFFF;
+    width: 500px;
+    height: 200px;
+    box-shadow: -1px 1px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    margin: 10px 0px 0px 20px;
+}
+
+.OffresCardInfosDetails2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #FFFFFF;
+    width: 300px;
+    height: 200px;
+    box-shadow: -1px 1px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    margin: 10px 0px 0px 20px;
+}
+
+.infos1 {
+    margin: 30px 0px 0px 40px;
+    color: #363A3D;
+    font-family: 'Public Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+}
+
+.mailOffers {
+    margin: 15px 0px 0px 40px;
+    color: #363A3D;
+    font-family: 'Public Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;   
+}
+
+.numOffers {
+    margin: 1px 0px 20px 40px;
+    color: #363A3D;
+    font-family: 'Public Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;   
+}
+
+.infos2{
+    margin: 30px 0px 0px 40px;
+    color: #363A3D;
+    font-family: 'Public Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 28px;
+}
+
+.titleOffersDetails {
+    color: #363A3D;
+    margin-left: 40px;
+    font-family: 'Public Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 28px;
+}
+
+.themeOffersDetails {
+    color: #363A3D;
+    margin-left: 40px;
+    font-family: 'Public Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 28px;
+}
+
+.DetailsAnnonceInfos2 {
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+    margin-left: 40px;
+}

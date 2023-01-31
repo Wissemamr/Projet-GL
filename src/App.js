@@ -1,15 +1,23 @@
-import './App.css';
-import Search from './pages/search/search';
-import Favoris from './pages/favoris/favoris'
-import Mesannonce from './pages/mesannonces/mes_annonces';
-import Pagination from './components/pagination';
-import Notification from './components/notification/notification';
-import NavBarPrin from './components/navbar/navbar';
-//import Navbarprin from './components/navbar/navbar';
+import React from 'react';
+import { BrowserRouter as Router, Switch, Route, Routes, Form, Link } from "react-router-dom";
+import LoginForm from './components/components/Form';
+import Navbar from './components/components/NavBar/NavBar';
+import './App.css'
+import NavBarPrin from './components/components/NavBarPrin/NavBarPrin';
+import LandingPage from './components/components/LandingPage/LandingPage';
+import PostulerCours from './components/components/PostulerCours/PostulerCours';
+import TrouverCours from './components/components/TrouverCours/TrouverCours';
+import { useMediaQuery } from 'react-responsive'
+import EspaceAdmin from './components/components/EspaceAdministrateur/EspaceAdministrateur';
+import Search from "./pages/search/search.jsx"
+
+
+
 function App() {
   return (
-    <Mesannonce></Mesannonce>
+    <div>
+      <LandingPage></LandingPage>
+    </div>
   );
 }
-
 export default App;

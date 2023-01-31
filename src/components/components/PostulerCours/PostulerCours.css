@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans&display=swap');
+
+.PostulerCoursTitre{
+    width: 100%;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin: 50px 0px 0px 40px;
+}
+
+.PostulerCoursText1{
+    color: #06241B;
+    font-family: 'Public Sans';
+    font-style: normal;
+    margin-left: 150px;
+    margin-bottom: 70px;
+}
+
+.PostulerCoursText2{
+    margin-left: 190px;
+    font-family: 'Public Sans';
+    font-style: normal;
+    color: #363A3D;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.PostulerCoursCard{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 58% 40%;
+    grid-gap: 2%;
+}
+
+.PostulerCoursCard1 {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0px 0px 190px;
+    height: fit-content;
+}
+
+.PostulerCoursCard2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #FFFFFF;
+    width: 500px;
+    height: 300px;
+    box-shadow: -1px 1px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    margin: 10px 0px 0px 20px;
+}
+
+.PostulerCours1Pics {
+    margin: 0px 0px 10px 0px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.Picture1 {
+    background-color: pink;
+    width: 360px;
+    height: 360px;
+    box-shadow: -1px 1px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    margin: 0px 5px 0px 0px;
+}
+
+.Picture21 {
+    background-color: rgb(28, 126, 224);
+    width: 340px;
+    height: 175px;
+    box-shadow: -1px 1px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    margin-bottom: 10px;
+    margin-left: 25px;
+}
+
+.Picture22 {
+    background-color: rgb(36, 177, 238);
+    width: 340px;
+    height: 175px;
+    box-shadow: -1px 1px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    margin-left: 25px;
+}
+
+.PostulerCours1Text {
+    font-family: 'Public Sans';
+    color: #363A3D;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 36px;
+}
+
+.LineSeparator2 {
+    width: 1250px;
+    height: 1px;
+    background: #bbbdc0;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 190px;
+   
+}
+
+.PostulerCoursDescription {
+    margin: 0px 0px 0px 190px;
+}
+
+.PostulerCoursDescriptionText {
+    font-family: 'Public Sans';
+    color: #363A3D;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 36px;
+}
+
+.TitreInput7 {
+    width : 1240px ;
+    height : 200px;
+    border-radius: 8px;
+    margin: 8px 0px;
+}
+
+.PostulerButton {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+    margin-right: 90px;
+    margin-bottom: 100px;
+}
+
+.btnPostuler{
+    width: 150px;
+    text-align: center;
+    padding: 10px;
+    background-color: #20B486;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+    font-size: 18px;
+    font-family: 'Public Sans';
+    font-style: normal;
+}
+
+.Infos1PostulerCours {
+    margin: 30px 0px 0px 40px;
+    color: #363A3D;
+    font-family: 'Public Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+}
+
+.PostulerCoursPersonnalInfos {
+    margin: 15px 0px 0px 40px;
+    color: #4f5355;
+    font-family: 'Public Sans';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 18px; 
+}

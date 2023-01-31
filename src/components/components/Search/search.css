@@ -1,0 +1,25 @@
+.Search{
+    height: 40px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    background-color: white;
+    width: inherit;
+    padding: 0px 8px 0px 0px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px gray;
+}
+
+.Search input{
+    height: 100%;
+    width: 90%;
+    border: none;
+    outline: none;
+    border-radius: inherit;
+    margin-left: 0px;
+}
+
+
+.loupe {
+    cursor: pointer;
+}
