@@ -2,8 +2,10 @@ import React, {useState} from "react";
 import Filters from "../search/filters";
 import Cardfav from "../../components/course_cardF";
 import { FiSearch } from "react-icons/fi";
-import Navbarprin from "../../components/navbar/navbar";
+
+import NavBarPrin from "../../components/components/NavBarPrin/NavBarPrin";
 import Pagination from "../../components/pagination";
+import Footer from "../../components/components/Footer/Footer";
 
 const Favoris = (props) => {
     const [searchInput, setSearchInput] = useState('');
@@ -14,7 +16,7 @@ const Favoris = (props) => {
 
     return ( 
         <div className="flex flex-col justify-center">
-            <Navbarprin></Navbarprin>,
+            <NavBarPrin></NavBarPrin>,
             <div className=" flex p-10 content-center pl-48">
                 <p className="text-5xl font-publicSans font-semibold">Mes <span className="text-myGreenSecondary">Favoris</span></p>
             </div>
@@ -43,6 +45,7 @@ const Favoris = (props) => {
                         </div>
                     </div>
             </div>
+            <Footer></Footer>
         </div>
         
     );

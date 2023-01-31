@@ -18,7 +18,7 @@
 .elements1 {
     margin: auto;
 }
- 
+
 
 .NavBarPrin ul {
     padding: 0;
@@ -44,6 +44,7 @@
     cursor: pointer;
     margin-top: 8px;
     margin-bottom: 8px;
+    vertical-align: middle;
 }
 
 .DepotAnnonce {
@@ -53,9 +54,16 @@
   display: inline-block;
   font-size: 16px;
 }
+.depotAnnonceTest{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+}
 
 .annonce{
     vertical-align: middle;
+    margin: 0;
 }
 
 

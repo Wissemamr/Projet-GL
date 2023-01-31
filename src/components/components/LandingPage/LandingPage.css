@@ -90,8 +90,15 @@
     height: fit-content;
     margin-top: 6%;
     overflow-x: scroll;
-    scrollbar-width: none;
+    scrollbar-width:none;
     scroll-behavior: smooth;
+    display: flex;
+    gap: 3%;
+    flex-wrap: nowrap;
+}
+
+.slider *{
+    width: 65px;
 }
 
 .slider22{

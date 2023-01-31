@@ -2,8 +2,9 @@ import React, {useState} from "react";
 import Filters from "./filters";
 import Card from "../../components/course_card";
 import { FiSearch } from "react-icons/fi";
-import Navbarprin from "../../components/navbar/navbar";
 import Pagination from "../../components/pagination";
+import Footer from "../../components/components/Footer/Footer";
+import NavBarPrin from "../../components/components/NavBarPrin/NavBarPrin";
 
 const Search = (props) => {
     const [searchInput, setSearchInput] = useState('');
@@ -11,10 +12,9 @@ const Search = (props) => {
         setSearchInput(e.target.value);
         console.log(searchInput);
     }
-
     return ( 
         <div className="flex flex-col justify-center">
-            <Navbarprin></Navbarprin>,
+            <NavBarPrin></NavBarPrin>,
             <div className=" flex p-10 content-center pl-48">
                 <p className="text-5xl font-publicSans font-semibold">Trouvez votre <span className="text-myGreenSecondary">Cours</span></p>
             </div>
@@ -44,8 +44,8 @@ const Search = (props) => {
                         
                     </div>
             </div>
+            <Footer></Footer>
         </div>
-        
     );
 }
  

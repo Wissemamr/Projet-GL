@@ -8,7 +8,7 @@ const AjouterFav = (props) => {
         //Request to BackEnd 
     }
     return ( 
-        <div className=" w-fit bg-white p-[10px] drop-shadow rounded-lg cursor-pointer">
+        <div className="w-fit bg-white p-[10px] drop-shadow rounded-lg cursor-pointer">
                     {/* <<img src={Heart} alt='heart' className="h-[20px] w-[20px]" />  */}
                     { heartFavorite && <div alt='heart' onClick={toggleHeart} >
                                             <FaHeart className=" text-myRed h-[20px] w-[20px]" />

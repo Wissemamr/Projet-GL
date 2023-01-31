@@ -14,6 +14,8 @@ import {BsArrowUpRight , BsVectorPen} from 'react-icons/bs'
 import {GiGraduateCap} from 'react-icons/gi'
 import {FaFacebookF , FaInstagram , FaLinkedinIn} from 'react-icons/fa'
 import { useRef } from "react";
+import Card from "../../course_card";
+import NiveauIcon from "../../gradHat";
 
 function LandingPage() {
     const slides = [1,2,3,4,5,6,7,8];
@@ -62,25 +64,10 @@ function LandingPage() {
                 </div>
                 <div className="SliderContainer">
                     <div className="slider" ref={slider}>
-                        { slides.map((slide,index)=>{
-                            return (
-                                <div className="slider-card">
-                                    <div className="slider-card-image">
-                                    </div>
-                                    <div className="slider-card-info">
-                                        <p>Infos</p>
-                                    </div>
-                                    <div className="slider-card-options">
-                                        <p className="prix">1000DA</p>
-                                        <div className="icons-options">
-                                            <FaRegHeart key={index} size={26} className="heart"/>
-                                            <BsArrowUpRight key={index} size={26} className="fleche"/>
-                                        </div>
-                                    </div>
-                                </div>
-                            )
-                         })
-
+                        {
+                            slides.map((item) => (
+                                <Card className="cardSlider"/>
+                            ))
                         }
                     </div>
                     <div className="Arrows">
@@ -150,13 +137,13 @@ function LandingPage() {
                     <h5 className="text10"><span style={{'color':"#6D737A"}}>Des cours disponible pour les trois phase scolaire</span></h5>
                     <div className="Niveaux">
                         <h2> 
-                        <GiGraduateCap size={30} className="nv1"/> Primaire
+                        <NiveauIcon level="Primaire"/> Primaire
                         </h2>
                         <h2 className="college"> 
-                        <GiGraduateCap size={30} className="nv2"/> Collège
+                        <NiveauIcon level="Collége"/> Collège
                         </h2>
                         <h2> 
-                        <GiGraduateCap size={30} className="nv3"/> Lycée
+                        <NiveauIcon level="Lycée"/> Lycée
                         </h2>
                     </div>
                 </div>

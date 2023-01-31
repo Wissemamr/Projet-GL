@@ -18,6 +18,7 @@ import TrouverCours from "./components/components/TrouverCours/TrouverCours";
 import PostulerCours from "./components/components/PostulerCours/PostulerCours";
 import Search from "./pages/search/search";
 import Favoris from "./pages/favoris/favoris";
+import EspaceAdmin from "./components/components/EspaceAdministrateur/EspaceAdministrateur";
 
 
 
@@ -32,6 +33,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       <Route path="/PostulerCours" element={<PostulerCours/>} />
       <Route path="/TrouverCours" element={<Search/>} />
       <Route path="/MesAnnonces" element={<Mesannonce/>} />
+      <Route path="/EspaceAdimin" element={<EspaceAdmin/>} />
       <Route path="/MesFavoris" element={<Favoris/>}></Route>
     </Routes>
   </BrowserRouter>
